@@ -26,7 +26,7 @@
 		</div>
 		<div class="row image-scroll">
 			<div class="col-md-12 text-center">
-				<a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
+				<a href="#can-do" id="nav-down"><img src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
 			</div>
 		</div>
 	</div>
@@ -37,6 +37,8 @@
 	<div class="row">
 		<div class="col-md-1 col-lg-3"></div>
 		<div class="col-md-10 col-lg-6">
+			<!-- Smooth scrolling target -->
+			<div id="can-do"></div>
 			<h4 class="bold yellow-clr">You can do with us.</h4>
 			<h1 class="uppercase">GetTimee is perfect for...</h1>
 		</div>
@@ -100,6 +102,27 @@
 	</div>
 </div> <!--End of Slider-->
 
+<!-- Contact Us -->
+<div class="container-fluid bg-contactus margin-top-upper">
+	 <div class="col-md-12 text-center">
+		<a href="#can-do" id="nav-down"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
+	</div>
+	<div class="container margin-top-upper">
+		<div class="row">
+			<div class="col-md-1 col-lg-3"></div>
+			<div class="col-md-10 col-lg-6">
+				<!-- Smooth scrolling target -->
+				<div id="can-do"></div>
+				<h4 class="bold yellow-clr">Get started for free.</h4>
+				<h1 class="uppercase">Try GetTimee And Track Your Team Now</h1>
+			</div>
+			<div class="col-md-1 col-lg-3"></div>
+		</div>
+		<div class="text-center space-top-high space-bottom-upper">
+			<a href="#" class="btn-outer"><div class="btn">Contact Us</div></a>
+		</div>
+	</div>
+</div>
 <?php get_footer(); ?>
 
 

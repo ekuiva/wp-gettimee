@@ -13,4 +13,14 @@ $('.slider-homepage').owlCarousel({
             items:1
         }
     }
-})
+});
+
+// Scrolling Smooth
+$(document).ready(function() { 
+    $('#nav-down').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 800);
+        return false;
+    });
+});

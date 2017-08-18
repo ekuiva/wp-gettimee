@@ -68,8 +68,17 @@ a:focus, a:hover {
 .space-top-high {
 	padding-top: 2rem;
 }
+.space-bottom-high {
+	padding-bottom: 2rem;
+}
+.margin-top-upper {
+	margin-top: 5rem;
+}
 .space-top-upper {
 	padding-top: 5rem;
+}
+.space-bottom-upper {
+	padding-bottom: 5rem;
 }
 .yellow-clr {
 	color: #f0cb40;
@@ -144,6 +153,18 @@ a:focus, a:hover {
     width: 0px; 
     height: 163px;
 }
+
+
+/**
+* Contact Us
+**/
+.bg-contactus {
+	background-color: #f9f9f9;
+}
+.image-scroll-minus {
+	margin-top: -19px;
+}
+
 
 /**
 * Footer
