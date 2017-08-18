@@ -1,0 +1,202 @@
+/*
+Theme Name: GetTimee Web Official
+Theme URI: http://www.gettimee.com
+Author: the Drife Tiam
+Author URI: www.gettimee.com
+Description: Ini adalah template GetTimee untuk versi pertama dan dengan konsep baru dari sebelumnya. Konsep ini sangat minimalis namun tetap elegant.
+Version: 1.8
+
+
+/**
+* Tabel of Content
+* 
+* 1.0 - General
+* 2.0 - Home Page
+* 3.0 - Responsive Style
+*     - Responsive 0 - 600 Mobile
+*     - Responsive 600 - 1000 Tablet
+*     - Responsive 1000 Desktop
+*
+*
+**/
+
+
+/**
+ * 1.0 - General
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+
+/*Get Fonts*/
+@import url("assets/css/fonts-style.css");
+
+body {
+	font-family: 'Raleway', serif;
+	color: #3a3a3a;
+	font-weight: 300;
+}
+.btn {
+	border-radius: 2px;
+	background-color: #f0cb40;
+	text-transform: uppercase;
+	border: solid 2px #ffffff;
+	font-weight: bold;
+	color: #3a3a3a;
+}
+.btn:hover{
+	color: #545454;
+	background-color: #f9d758;
+}
+.btn-outer {
+	padding: .3rem .3rem;
+    background-color: #f0cb40;
+    display: inline-block;
+}
+a:focus, a:hover {
+	color: #3a3a3a;
+}
+.bold {
+	font-weight: bold;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.space-top-middle {
+	padding-top: 1rem;
+}
+.space-top-high {
+	padding-top: 2rem;
+}
+.space-top-upper {
+	padding-top: 5rem;
+}
+.yellow-clr {
+	color: #f0cb40;
+}
+
+
+/**
+* 2.0 - Home Page
+*
+* Home page merupakan custom css khusus untuk halaman utama
+**/
+
+/**
+* Header
+**/
+.bg-header {
+	background-image: url(assets/images/header.png);
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:left;
+	color: #fff;
+}
+.head-extra-bold {
+	font-style: italic;
+	font-weight: 800;
+	font-size: 55px;
+	text-transform: uppercase;
+}
+.head-italic{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 55px;
+	text-transform: uppercase;
+}
+.image-scroll{
+	padding-top: 11%;
+}
+
+/**
+* Slider
+**/
+.lead-slider {
+	font-size: 1.3em;
+    font-weight: 500;
+    color: #f0cb40;
+}
+.title-slider {
+	font-size: 15px;
+    text-transform: uppercase;
+}
+.description-slider {
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+.border {
+   	background-color: #ffffff;
+    border: solid 1px #f0cb40;
+    height: 10.2em;
+    padding: 9px;
+}
+.padding-right-0 {
+	padding-right: 0px;
+}
+.padding-left-0 {
+	padding-left: 0px;
+}
+.img-slider {
+	display: block;
+    width: 0px; 
+    height: 163px;
+}
+
+/**
+* Footer
+**/
+.bg-footer {
+	background-color: #3a3a3a;
+	height: auto;
+	color: #fff;
+	font-size: 12px;
+	padding-top: 1em;
+}
+.logo-fb {
+	width: 34px;
+    height: 37px;
+}
+.footer-space {
+	margin: 10px 0px;
+}
+
+
+/**
+* 3.0 - Responsive Style
+*
+* Disini ada beberapa file responsive style yang di import dari file lain.
+**/
+
+
+/*
+* Responsive 0 - 600 Mobile
+*/
+@media(min-width: 0px) and (max-width: 600px){
+	
+	/**
+	* Slider
+	**/
+	.padding-left-0 {
+		padding-left: 15px;
+	}
+	.padding-right-0 {
+		padding-right: 15px;
+	}
+}
+
+/*
+* Responsive 600 - 1000 Tablet
+*/
+@media(min-width: 600px) and (max-width: 1000px){
+	
+}
+
+/*
+* Responsive 1000 Desktop
+*/
+@media(min-width: 1000px){
+	
+}
