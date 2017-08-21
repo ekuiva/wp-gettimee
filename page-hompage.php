@@ -115,29 +115,29 @@
 		</div>
 		<div class="row space-top-high">
 			<!-- Tabs -->
-			<div class="container" style="margin-top: 50px;">
-			    <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-			      <li class="active">
-			         <a href="#precise" data-toggle="tab">Precise & Accurate</a>
+			<div class="container">
+			    <ul id="myTab" class="nav nav-tabs" role="tablist">
+			      <li class="nav-item">
+			         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">Precise & Accurate</a>
 			      </li>
-			      <li>
-			         <a href="#clock" data-toggle="tab">Clock in a click</a>
+			      <li class="nav-item">
+			         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">Clock in a click</a>
 			      </li>
-			      <li>
-			         <a href="#monitor" data-toggle="tab">Monitor Team</a>
+			      <li class="nav-item">
+			         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">Monitor Team</a>
 			      </li>
-			      <li>
-			         <a href="#team" data-toggle="tab">View Team</a>
+			      <li class="nav-item">
+			         <a href="#team" class="nav-link" data-toggle="tab" role="tab">View Team</a>
 			      </li>
-			      <li>
-			         <a href="#time" data-toggle="tab">Flexible working time setting </a>
+			      <li class="nav-item">
+			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">Flexible working time setting </a>
 			      </li>
-			      <li>
-			         <a href="#news" data-toggle="tab">News Broadcast </a>
+			      <li class="nav-item">
+			         <a href="#news" class="nav-link" data-toggle="tab" role="tab">News Broadcast </a>
 			      </li>
 			    </ul>
 			    <div id="myTabContent" class="tab-content" >
-			        <div class="tab-pane fade in active" id="precise">
+			        <div class="tab-pane active"  id="precise">
 			            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
 			        </div>
 			        <div class="tab-pane fade" id="clock">
