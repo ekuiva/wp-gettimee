@@ -103,100 +103,163 @@
 </div> <!--End of Slider-->
 
 <!-- GetTimee Features -->
-<div class="container-fluid bg-features margin-top-upper space-bottom-high">
-	<div class="container">
+<div class="container-fluid bg-features margin-top-upper space-bottom-upper">
+	<div class="col-md-12 text-center">
+		<a href="#getTimee" id="nav-down-choose"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
+	</div>
+	<div class="container margin-top-upper">
 		<div class="row">
 			<div class="col-md-1 col-lg-3"></div>
 			<div class="col-md-10 col-lg-6">
 				<h4 class="bold yellow-clr">Everything you need for your team.</h4>
 				<h1 class="uppercase">GetTimee Features</h1>
 			</div>
+			<!-- Smooth scrolling target -->
+			<div id="getTimee"></div>
 			<div class="col-md-1 col-lg-3"></div>
 		</div>
 		<div class="row space-top-high">
 			<!-- Tabs -->
 			<div class="container">
-			    <ul id="myTab" class="nav nav-tabs" role="tablist">
-			      <li class="nav-item col-md-2">
-			         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">
-			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
-			         	</div>
-			         	<div class="text-center bg-tab uppercase">
-			         		<p class="font-14">Precise & Accurate</p>
-			         	</div>
-			         </a>
-			      </li>
-			      <li class="nav-item col-md-2">
-			         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">
-			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
-			         	</div>
-			         	<div class="text-center bg-tab uppercase">
-			         		<p class="font-14">Clock in a click</p>
-			         	</div>
-			         </a>
-			      </li>
-			      <li class="nav-item col-md-2">
-			         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">
-			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
-			         	</div>
-			         	<div class="text-center bg-tab uppercase">
-			         		<p class="font-14">Monitor Team</p>
-			         	</div>
-			         </a>
-			      </li>
-			      <li class="nav-item col-md-2">
-			         <a href="#team" class="nav-link" data-toggle="tab" role="tab">
-			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
-			         	</div>
-			         	<div class="text-center bg-tab uppercase">
-			         		<p class="font-14">View Team</p>
-			         	</div>
-			         </a>
-			      </li>
-			      <li class="nav-item col-md-2">
-			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
-			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time.png">
-			         	</div>
-			         	<div class="text-center bg-tab uppercase">
-			         		<p class="font-14">Flexible working time setting</p>
-			         	</div>
-			         </a>
-			      </li>
-			      <li class="nav-item col-md-2">
-			         <a href="#news" class="nav-link" data-toggle="tab" role="tab">
-			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
-			         	</div>
-			         	<div class="text-center bg-tab uppercase">
-			         		<p class="font-14">News Broadcast</p>
-			         	</div>
-			         </a>
-			      </li>
-			    </ul>
-			    <div id="myTabContent" class="tab-content" >
-			        <div class="tab-pane active"  id="precise">
-			            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-			        </div>
-			        <div class="tab-pane fade" id="clock">
-			            <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one. We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.</p>
-			        </div>
-			        <div class="tab-pane fade" id="monitor">
-			            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.</p>
-			        </div>
-			        <div class="tab-pane fade" id="team">
-			            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.</p>
-			        </div>
-			        <div class="tab-pane fade" id="time">
-			            <p>Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.</p>
-			        </div>
-			        <div class="tab-pane fade" id="news">
-			            <p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
-			        </div>
+			    <div class="row">
+			    	<ul id="myTab" class="nav nav-tabs" role="tablist">
+				      <li class="nav-item col-md-2">
+				         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">
+				         	<div class="text-center">
+				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
+				         	</div>
+				         	<div class="text-center bg-tab uppercase">
+				         		<p class="font-14">Precise & Accurate</p>
+				         	</div>
+				         </a>
+				      </li>
+				      <li class="nav-item col-md-2">
+				         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">
+				         	<div class="text-center">
+				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
+				         	</div>
+				         	<div class="text-center bg-tab uppercase">
+				         		<p class="font-14">Clock in a click</p>
+				         	</div>
+				         </a>
+				      </li>
+				      <li class="nav-item col-md-2">
+				         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">
+				         	<div class="text-center">
+				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
+				         	</div>
+				         	<div class="text-center bg-tab uppercase">
+				         		<p class="font-14">Monitor Team</p>
+				         	</div>
+				         </a>
+				      </li>
+				      <li class="nav-item col-md-2">
+				         <a href="#team" class="nav-link" data-toggle="tab" role="tab">
+				         	<div class="text-center">
+				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
+				         	</div>
+				         	<div class="text-center bg-tab uppercase">
+				         		<p class="font-14">View Team</p>
+				         	</div>
+				         </a>
+				      </li>
+				      <li class="nav-item col-md-2">
+				         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
+				         	<div class="text-center">
+				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time.png">
+				         	</div>
+				         	<div class="text-center bg-tab uppercase">
+				         		<p class="font-14">Flexible working time setting</p>
+				         	</div>
+				         </a>
+				      </li>
+				      <li class="nav-item col-md-2">
+				         <a href="#news" class="nav-link" data-toggle="tab" role="tab">
+				         	<div class="text-center">
+				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
+				         	</div>
+				         	<div class="text-center bg-tab uppercase">
+				         		<p class="font-14">News Broadcast</p>
+				         	</div>
+				         </a>
+				      </li>
+				    </ul>
+			    </div>
+			    <div class="row">
+			    	<div id="myTabContent" class="tab-content" >
+				        <div class="tab-pane active"  id="precise">
+				            <div class="row bg-tab-item">
+				            	<div class="col-md-8 padding-item-tab">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth-item.png">
+				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		<p>GetTimee understands mobile workstyle trend. GetTimee supports this by providing working time setting. Employee can select available working time that suits one’s preference. </p>
+				            	</div>
+				            	<div class="col-md-4 text-center">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+				            	</div>
+				            </div>
+				        </div>
+				        <div class="tab-pane fade" id="clock">
+				            <div class="row bg-tab-item">
+					            <div class="col-md-8 padding-item-tab">
+					            	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click-item.png">
+				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+					            	Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one. We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.
+					            </div>
+				            <div class="col-md-4 text-center">
+			            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+			            	</div>
+				            </div>
+				        </div>
+				        <div class="tab-pane fade" id="monitor">
+				            <div class="row bg-tab-item">
+					            <div class="col-md-8 padding-item-tab">
+					            	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover-item.png">
+				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+					            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.
+					            </div>
+					            <div class="col-md-4 text-center">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+				            	</div>
+				            </div>
+				        </div>
+				        <div class="tab-pane fade" id="team">
+				            <div class="row bg-tab-item">
+				            	<div class="col-md-8 padding-item-tab">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc-item.png">
+				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
+				            	</div>
+				            	<div class="col-md-4 text-center">
+			            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+			            	</div>
+				            </div>
+				        </div>
+				        <div class="tab-pane fade" id="time">
+				            <div class="row bg-tab-item">
+				            	<div class="col-md-8 padding-item-tab">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time-item.png">
+				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.
+				            	</div>
+				            	<div class="col-md-4 text-center">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+				            	</div>
+				            </div>
+				        </div>
+				        <div class="tab-pane fade" id="news">
+				            <div class="row bg-tab-item">
+				            	<div class="col-md-8 padding-item-tab">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news-item.png">
+				            		<h3 class="uppercase space-top-middle">News Broadcast</h3>
+				            		Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+				            	</div>
+				            	<div class="col-md-4 text-center">
+				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+				            	</div>
+				            </div>
+				        </div>
+				    </div>
 			    </div>
 			</div> <!--End of Tabs-->
 		</div>

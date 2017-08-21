@@ -206,6 +206,17 @@ a:focus, a:hover {
 .nav-tabs {
 	border-bottom: 1px solid rgba(221, 221, 221, 0);
 }
+.bg-tab-item {
+	background-color: #fff;
+	box-shadow: 4px 4px 1px #e8e8e8;
+	border: solid 1px #f0cb40;
+	padding: 2em;
+	margin: 1em;
+}
+.padding-item-tab {
+	padding: 2em 8em 3em 3em;
+}
+
 /**
 * e. Contact Us
 *

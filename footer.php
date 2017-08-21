@@ -13,7 +13,7 @@
   				<div class="col-md-4 text-right footer-space">
   					<p>PT. DRIFE SOLUSI INTEGRASI<br/>
   					+62 21 2854 2877<br/>
-  					info@timeeapp.com</p>
+  					info@gettimeeapp.com</p>
   				</div>
   			</div>
   		</div>
