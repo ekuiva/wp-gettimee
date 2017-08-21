@@ -203,7 +203,7 @@
 				            <div class="row bg-tab-item">
 					            <div class="col-md-8 padding-item-tab">
 					            	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click-item.png">
-				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		<h3 class="uppercase space-top-middle">Generation admin template based</h3>
 					            	Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one. We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.
 					            </div>
 				            <div class="col-md-4 text-center">
@@ -215,7 +215,7 @@
 				            <div class="row bg-tab-item">
 					            <div class="col-md-8 padding-item-tab">
 					            	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover-item.png">
-				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		<h3 class="uppercase space-top-middle">Faucibus orci luctus et</h3>
 					            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.
 					            </div>
 					            <div class="col-md-4 text-center">
@@ -227,7 +227,7 @@
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
 				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc-item.png">
-				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		<h3 class="uppercase space-top-middle">Sliquet quam id dui posuere blandit</h3>
 				            		Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
 				            	</div>
 				            	<div class="col-md-4 text-center">
@@ -239,7 +239,7 @@
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
 				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time-item.png">
-				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
+				            		<h3 class="uppercase space-top-middle">Cras ultricies ligula sed magna</h3>
 				            		Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.
 				            	</div>
 				            	<div class="col-md-4 text-center">
@@ -251,7 +251,7 @@
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
 				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news-item.png">
-				            		<h3 class="uppercase space-top-middle">News Broadcast</h3>
+				            		<h3 class="uppercase space-top-middle">Cras ultricies ligula sed magna</h3>
 				            		Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
 				            	</div>
 				            	<div class="col-md-4 text-center">

@@ -187,8 +187,11 @@ a:focus, a:hover {
 	height: 8em;
 	padding: 21px;
 }
+.nav-link.active>.bg-tab {
+	background-image: url('assets/images/bg-tab-active.png');
+}
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-	color: #f0cb40;
+	color: #fff;
    	background-color: rgba(255, 255, 255, 0); 
     border-color: #ddd #ddd #fff; 
     height: 8em;
