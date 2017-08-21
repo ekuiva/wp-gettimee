@@ -102,6 +102,65 @@
 	</div>
 </div> <!--End of Slider-->
 
+<!-- GetTimee Features -->
+<div class="container-fluid bg-features margin-top-upper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1 col-lg-3"></div>
+			<div class="col-md-10 col-lg-6">
+				<h4 class="bold yellow-clr">Everything you need for your team.</h4>
+				<h1 class="uppercase">GetTimee Features</h1>
+			</div>
+			<div class="col-md-1 col-lg-3"></div>
+		</div>
+		<div class="row space-top-high">
+			<!-- Tabs -->
+			<div class="container" style="margin-top: 50px;">
+			    <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
+			      <li class="active">
+			         <a href="#precise" data-toggle="tab">Precise & Accurate</a>
+			      </li>
+			      <li>
+			         <a href="#clock" data-toggle="tab">Clock in a click</a>
+			      </li>
+			      <li>
+			         <a href="#monitor" data-toggle="tab">Monitor Team</a>
+			      </li>
+			      <li>
+			         <a href="#team" data-toggle="tab">View Team</a>
+			      </li>
+			      <li>
+			         <a href="#time" data-toggle="tab">Flexible working time setting </a>
+			      </li>
+			      <li>
+			         <a href="#news" data-toggle="tab">News Broadcast </a>
+			      </li>
+			    </ul>
+			    <div id="myTabContent" class="tab-content" >
+			        <div class="tab-pane fade in active" id="precise">
+			            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			        </div>
+			        <div class="tab-pane fade" id="clock">
+			            <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one. We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.</p>
+			        </div>
+			        <div class="tab-pane fade" id="monitor">
+			            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.</p>
+			        </div>
+			        <div class="tab-pane fade" id="team">
+			            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.</p>
+			        </div>
+			        <div class="tab-pane fade" id="time">
+			            <p>Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.</p>
+			        </div>
+			        <div class="tab-pane fade" id="news">
+			            <p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+			        </div>
+			    </div>
+			</div> <!--End of Tabs-->
+		</div>
+	</div>
+</div>
+
 <!-- Choose GetTimee -->
 <div class="container margin-top-upper">
 	<div class="row">
@@ -153,14 +212,12 @@
 <!-- Contact Us -->
 <div class="container-fluid bg-contactus margin-top-upper">
 	 <div class="col-md-12 text-center">
-		<a href="#contact" id="nav-down"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
+		<a href="#contact" id="nav-down-contact"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
 	</div>
 	<div class="container margin-top-upper" id="contact">
 		<div class="row">
 			<div class="col-md-1 col-lg-3"></div>
 			<div class="col-md-10 col-lg-6">
-				<!-- Smooth scrolling target -->
-				<div id="can-do"></div>
 				<h4 class="bold yellow-clr">Get started for free.</h4>
 				<h1 class="uppercase">Try GetTimee And Track Your Team Now</h1>
 			</div>

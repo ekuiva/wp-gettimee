@@ -12,6 +12,11 @@ Version: 1.8
 * 
 * 1.0 - General
 * 2.0 - Home Page
+	  	a. Header
+	  	b. Slider
+	  	c. GetTimee Features
+	  	d. Contact Us
+	  	e. Footer
 * 3.0 - Responsive Style
 *     - Responsive 0 - 600 Mobile
 *     - Responsive 600 - 1000 Tablet
@@ -157,6 +162,13 @@ a:focus, a:hover {
     height: 163px;
 }
 
+/**
+* GetTimee Features
+*
+**/
+.bg-features {
+	background-color: #f9f9f9;
+}
 
 /**
 * Contact Us

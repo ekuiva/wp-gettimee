@@ -28,4 +28,8 @@
     <script src="<?php echo get_template_directory_uri()?>/assets/js/owl-carousel-v2/dist/owl.carousel.min.js"></script>
     <!-- Custom Script Js -->
     <script src="<?php echo get_template_directory_uri()?>/assets/js/scripts.js"></script>
+    <!-- Bootstrap Tabcollapse -->
+    <!-- <script src="<?php echo get_template_directory_uri()?>/assets/libs/bootstrap-tabcollapse/js/jquery-1.10.1.min.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri()?>/assets/libs/bootstrap-tabcollapse/js/bootstrap/bootstrap.js"></script> -->
+    <script src="<?php echo get_template_directory_uri()?>/assets/libs/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
 </html>
