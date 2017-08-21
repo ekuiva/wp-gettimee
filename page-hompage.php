@@ -117,40 +117,62 @@
 			<!-- Tabs -->
 			<div class="container">
 			    <ul id="myTab" class="nav nav-tabs" role="tablist">
-			      <li class="nav-item">
+			      <li class="col-md-2 nav-item">
 			         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">
-			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
-			         	Precise & Accurate
+			         	<div class="text-center">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
+			         	</div>
+			         	<div class="text-center hexagon">
+			         		Precise & Accurate
+			         	</div>
 			         </a>
 			      </li>
-			      <li class="nav-item">
+			      <li class="col-md-2 nav-item">
 			         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">
-			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
-			         	Clock in a click
+			         	<div class="text-center">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
+			         	</div>
+			         	<div class="text-center hexagon">
+			         		Clock in a click
+			         	</div>
 			         </a>
 			      </li>
-			      <li class="nav-item">
+			      <li class="col-md-2 nav-item">
 			         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">
-			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
-			         	Monitor Team
+			         	<div class="text-center">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
+			         	</div>
+			         	<div class="text-center hexagon">
+			         		Monitor Team
+			         	</div>
 			         </a>
 			      </li>
-			      <li class="nav-item">
+			      <li class="col-md-2 nav-item">
 			         <a href="#team" class="nav-link" data-toggle="tab" role="tab">
-			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
-			         	View Team
+			         	<div class="text-center">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
+			         	</div>
+			         	<div class="text-center hexagon">
+			         		View Team
+			         	</div>
 			         </a>
 			      </li>
-			      <li class="nav-item">
+			      <li class="col-md-2 nav-item">
 			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
-			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
-			         	Flexible working time setting
+			         	<div class="text-center">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
+			         	</div>
+			         	<div class="text-center hexagon">
+			         		Flexible working time setting
+			         	</div>
 			         </a>
 			      </li>
-			      <li class="nav-item">
+			      <li class="col-md-2 nav-item">
 			         <a href="#news" class="nav-link" data-toggle="tab" role="tab">
-			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
-			         	News Broadcast
+			         	<div class="text-center">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
+			         	</div>
+			         	<div class="text-center hexagon">News Broadcast</div>
 			         </a>
 			      </li>
 			    </ul>
