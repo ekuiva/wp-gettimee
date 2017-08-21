@@ -21,7 +21,7 @@
   </footer>
 </body>
   	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="<?php echo get_template_directory_uri()?>/assets/js/jquery/jquery-3.1.1.slim.min.js"></script>
+    <script src="<?php echo get_template_directory_uri()?>/assets/js/jquery/jquery-3.1.0.js"></script>
     <script src="<?php echo get_template_directory_uri()?>/assets/js/tether/tether.min.js"></script>
     <script src="<?php echo get_template_directory_uri()?>/assets/css/bootstrap/js/bootstrap.min.js"></script>
     <!-- Owlcarousel -->

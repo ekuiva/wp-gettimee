@@ -89,7 +89,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 <!-- GetTimee Features -->
 <div class="container-fluid bg-features margin-top-upper space-bottom-upper">
 	<div class="col-md-12 text-center">
-		<a href="#getTimee" id="nav-down-choose"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
+		<a href="#getTimee" id="nav-down-gettimee-fitur"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
 	</div>
 	<div class="container margin-top-upper">
 		<div class="row">

@@ -23,4 +23,28 @@ $(document).ready(function() {
         }, 800);
         return false;
     });
+    $('#nav-down-choose').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 800);
+        return false;
+    });
+    $('#nav-down-gettimee-fitur').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 800);
+        return false;
+    });
+    $('#nav-down-choose').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 800);
+        return false;
+    });
+    $('#nav-down-contact').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 800);
+        return false;
+    });
 });
