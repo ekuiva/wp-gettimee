@@ -39,7 +39,6 @@ Version: 1.8
 
 body {
 	font-family: 'Raleway', serif;
-	color: #3a3a3a;
 	font-weight: 300;
 }
 .btn {
@@ -184,7 +183,6 @@ a:focus, a:hover {
 	background-image: url('assets/images/bg-tab.png');
 	background-repeat: no-repeat;
 	background-size: 10em;
-	background-position: center;
 	background-position: top;
 	height: 8em;
 	padding: 21px;
@@ -205,39 +203,9 @@ a:focus, a:hover {
 .nav-link {
 	padding: 0; 
 }
-.hexagon {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 150px;
-  position: relative;
-  border: 1px solid #f0cb40;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: #fff;
+.nav-tabs {
+	border-bottom: 1px solid rgba(221, 221, 221, 0);
 }
-
-.hexagon::after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 0;
-  height: 0;
-  position: absolute;
-  content: "";
-  bottom: -40px;
-  left: 0;
-  border: 75px solid rgba(0,0,0,0);
-  border-top: 40px solid #fff;
-  border-bottom: 0 solid;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: none;
-}
-
 /**
 * e. Contact Us
 *
