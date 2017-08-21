@@ -117,62 +117,64 @@
 			<!-- Tabs -->
 			<div class="container">
 			    <ul id="myTab" class="nav nav-tabs" role="tablist">
-			      <li class="col-md-2 nav-item">
+			      <li class="nav-item col-md-2">
 			         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">
 			         	<div class="text-center">
 			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
 			         	</div>
-			         	<div class="text-center hexagon">
-			         		Precise & Accurate
+			         	<div class="text-center bg-tab uppercase">
+			         		<p class="font-14">Precise & Accurate</p>
 			         	</div>
 			         </a>
 			      </li>
-			      <li class="col-md-2 nav-item">
+			      <li class="nav-item col-md-2">
 			         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">
 			         	<div class="text-center">
 			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
 			         	</div>
-			         	<div class="text-center hexagon">
-			         		Clock in a click
+			         	<div class="text-center bg-tab uppercase">
+			         		<p class="font-14">Clock in a click</p>
 			         	</div>
 			         </a>
 			      </li>
-			      <li class="col-md-2 nav-item">
+			      <li class="nav-item col-md-2">
 			         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">
 			         	<div class="text-center">
 			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
 			         	</div>
-			         	<div class="text-center hexagon">
-			         		Monitor Team
+			         	<div class="text-center bg-tab uppercase">
+			         		<p class="font-14">Monitor Team</p>
 			         	</div>
 			         </a>
 			      </li>
-			      <li class="col-md-2 nav-item">
+			      <li class="nav-item col-md-2">
 			         <a href="#team" class="nav-link" data-toggle="tab" role="tab">
 			         	<div class="text-center">
 			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
 			         	</div>
-			         	<div class="text-center hexagon">
-			         		View Team
+			         	<div class="text-center bg-tab uppercase">
+			         		<p class="font-14">View Team</p>
 			         	</div>
 			         </a>
 			      </li>
-			      <li class="col-md-2 nav-item">
+			      <li class="nav-item col-md-2">
 			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
 			         	<div class="text-center">
 			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time.png">
 			         	</div>
-			         	<div class="text-center hexagon">
-			         		Flexible working time setting
+			         	<div class="text-center bg-tab uppercase">
+			         		<p class="font-14">Flexible working time setting</p>
 			         	</div>
 			         </a>
 			      </li>
-			      <li class="col-md-2 nav-item">
+			      <li class="nav-item col-md-2">
 			         <a href="#news" class="nav-link" data-toggle="tab" role="tab">
 			         	<div class="text-center">
 			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
 			         	</div>
-			         	<div class="text-center hexagon">News Broadcast</div>
+			         	<div class="text-center bg-tab uppercase">
+			         		<p class="font-14">News Broadcast</p>
+			         	</div>
 			         </a>
 			      </li>
 			    </ul>

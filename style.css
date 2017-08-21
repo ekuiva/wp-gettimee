@@ -92,7 +92,10 @@ a:focus, a:hover {
 .yellow-clr {
 	color: #f0cb40;
 }
-
+.font-14 {
+	font-size: 14px;
+	font-weight: 500;
+}
 
 /**
 * 2.0 - Home Page
@@ -177,14 +180,62 @@ a:focus, a:hover {
 * d. Tabs Style
 *
 **/
+.bg-tab {
+	background-image: url('assets/images/bg-tab.png');
+	background-repeat: no-repeat;
+	background-size: 10em;
+	background-position: center;
+	background-position: top;
+	height: 8em;
+	padding: 21px;
+}
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-	color: #464a4c;
-   	background-color: #fff; 
+	color: #f0cb40;
+   	background-color: rgba(255, 255, 255, 0); 
     border-color: #ddd #ddd #fff; 
-    height: 7.2em;
+    height: 8em;
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-	height: 7.2em;
+	height: 8em;
+}
+.nav-tabs .nav-link {
+	border: none;
+	color: #3a3a3a;
+}
+.nav-link {
+	padding: 0; 
+}
+.hexagon {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 150px;
+  position: relative;
+  border: 1px solid #f0cb40;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #fff;
+}
+
+.hexagon::after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: "";
+  bottom: -40px;
+  left: 0;
+  border: 75px solid rgba(0,0,0,0);
+  border-top: 40px solid #fff;
+  border-bottom: 0 solid;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: none;
 }
 
 /**
