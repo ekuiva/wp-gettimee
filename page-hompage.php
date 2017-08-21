@@ -5,6 +5,13 @@
 ?>
 
 <?php get_header(); ?>
+<?php
+if (have_posts()) : while (have_posts()) : the_post(); 
+   $page_id = $post->ID;
+
+   // Home Component Page
+   $home_components_page = get_post_meta($page_id, 'component-homepage', TRUE);
+?>
 
 <!-- Header -->
 <div class="container-fluid bg-header">
@@ -48,54 +55,31 @@
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
 			<div class="slider-homepage owl-carousel owl-theme">
+				<!-- start item slider -->
+				<?php
+	            foreach ($home_components_page as $key => $value) {
+	               $top_title = $value['top-title'];
+	               $main_title = $value['main-title'];
+	               $description_slider = $value['description-slider'];
+	               $image_lider = wp_get_attachment_url($value['image-slider']);
+	            ?>
 			    <div class="item">
 			    	<div class="row">
 			    		<div class="col-md-6 padding-right-0">
 			    			<div class="border-outer">
 				    			<div class="border">
-				    				<h3 class="lead-slider">Ideal for Mobile Workforce</h3>
-					    			<h4 class="title-slider">High mobility is required from sales force/field force</h4>
-					    			<p class="description-slider">GetTimee facilitates the time recording management and remote use. Thanks to the mobile application, you can use GetTimee from Android & iOS mobile devices. </p>
+				    				<h3 class="lead-slider"><?php echo $top_title; ?></h3>
+					    			<h4 class="title-slider"><?php echo $main_title?></h4>
+					    			<p class="description-slider"><?php echo $description_slider?></p>
 				    			</div>
 			    			</div>
 			    		</div>
 			    		<div class="col-md-6 padding-left-0">
-			    			<img class="img-responsive img-slider" src="<?php echo get_template_directory_uri()?>/assets/images/slider-1.png">
+			    			<img class="img-responsive img-slider" src="<?php echo $image_lider ?>">
 			    		</div>
 			    	</div>
 			    </div>
-			    <div class="item">
-			    	<div class="row">
-			    		<div class="col-md-6 padding-right-0">
-			    			<div class="border-outer">
-			    				<div class="border"> 
-					    			<h3 class="lead-slider">Curabitur Aliquet Auam Loam</h3>
-					    			<h4 class="title-slider">Vivamus magna justo lacinia eget consectetur sed</h4>
-					    			<p class="description-slider">Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-					    		</div>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-6 padding-left-0">
-			    			<img class="img-responsive img-slider" src="<?php echo get_template_directory_uri()?>/assets/images/slider-2.png">
-			    		</div>
-			    	</div>
-			    </div>
-			    <div class="item">
-			    	<div class="row">
-			    		<div class="col-md-6 padding-right-0">
-			    			<div class="border-outer">
-			    				<div class="border">
-			    					<h3 class="lead-slider">Lorem ipsum dolor sit amet</h3>
-					    			<h4 class="title-slider">Vivamus suscipit tortor eget felis porttitor volutpat</h4>
-					    			<p class="description-slider">Sed porttitor lectus nibh. Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-			    				</div>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-6 padding-left-0">
-			    			<img class="img-responsive img-slider" src="<?php echo get_template_directory_uri()?>/assets/images/slider-3.png">
-			    		</div>
-			    	</div>
-			    </div>
+			    <?php }?> <!-- end item slider -->
 			</div>
 		</div>
 		<div class="col-md-1"></div>
@@ -123,142 +107,108 @@
 			<div class="container">
 			    <div class="row">
 			    	<ul id="myTab" class="nav nav-tabs" role="tablist">
-				      <li class="nav-item col-md-2">
-				         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">
-				         	<div class="text-center">
-				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
-				         	</div>
-				         	<div class="text-center bg-tab uppercase">
-				         		<p class="font-14">Precise & Accurate</p>
-				         	</div>
-				         </a>
-				      </li>
-				      <li class="nav-item col-md-2">
-				         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">
-				         	<div class="text-center">
-				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
-				         	</div>
-				         	<div class="text-center bg-tab uppercase">
-				         		<p class="font-14">Clock in a click</p>
-				         	</div>
-				         </a>
-				      </li>
-				      <li class="nav-item col-md-2">
-				         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">
-				         	<div class="text-center">
-				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
-				         	</div>
-				         	<div class="text-center bg-tab uppercase">
-				         		<p class="font-14">Monitor Team</p>
-				         	</div>
-				         </a>
-				      </li>
-				      <li class="nav-item col-md-2">
-				         <a href="#team" class="nav-link" data-toggle="tab" role="tab">
-				         	<div class="text-center">
-				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
-				         	</div>
-				         	<div class="text-center bg-tab uppercase">
-				         		<p class="font-14">View Team</p>
-				         	</div>
-				         </a>
-				      </li>
-				      <li class="nav-item col-md-2">
-				         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
-				         	<div class="text-center">
-				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time.png">
-				         	</div>
-				         	<div class="text-center bg-tab uppercase">
-				         		<p class="font-14">Flexible working time setting</p>
-				         	</div>
-				         </a>
-				      </li>
-				      <li class="nav-item col-md-2">
-				         <a href="#news" class="nav-link" data-toggle="tab" role="tab">
-				         	<div class="text-center">
-				         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
-				         	</div>
-				         	<div class="text-center bg-tab uppercase">
-				         		<p class="font-14">News Broadcast</p>
-				         	</div>
-				         </a>
-				      </li>
+			    		<!-- Start GetTimee Features -->
+			    	  	<?php
+			    	  	// Active fist
+						$count_post = 1;
+	        	 		$gettimeefeatures = new WP_Query(array( 'post_type' => 'gettimeefeatures','posts_per_page'=> 6, 'order' => 'ASC'));
+	        	 		while ( $gettimeefeatures->have_posts() ) { //start while
+	        	 		$gettimeefeatures->the_post();
+	        	 		$page_id_features = $post->ID;
+	        	 		$post_slug = $post->post_name;
+
+	        	 		// Looping Gettimee Features
+						$gettimee_features = get_post_meta($page_id_features, 'gettimee-features', TRUE); 
+						foreach ($gettimee_features as $key => $value) { //start foreach
+						$icon_warna_putih = wp_get_attachment_url($value['icon-warna-putih']);
+						// untuk aktif pertama kali
+						if ($count_post == 1) { //start if
+						?>
+						<li class="nav-item col-md-2">
+				         	<a href="#<?php echo $post_slug?>" class="nav-link active" data-toggle="tab" role="tab">
+					         	<div class="text-center">
+					         		<img src="<?php echo $icon_warna_putih; ?>">
+					         	</div>
+					         	<div class="text-center bg-tab uppercase">
+					         		<p class="font-14"><?php echo get_the_title() ?></p>
+					         	</div>
+				        	</a>
+				     	</li>
+						<?php
+						} else { //else
+						?>
+						<li class="nav-item col-md-2">
+				         	<a href="#<?php echo $post_slug?>" class="nav-link" data-toggle="tab" role="tab">
+					         	<div class="text-center">
+					         		<img src="<?php echo $icon_warna_putih; ?>">
+					         	</div>
+					         	<div class="text-center bg-tab uppercase">
+					         		<p class="font-14"><?php echo get_the_title() ?></p>
+					         	</div>
+				        	</a>
+				     	</li>
+						<?php
+						} // end of if
+						} // end of foreach
+						$count_post++;
+			        	} // end of while
+			        	wp_reset_postdata();
+			        	?> <!-- End GetTimee Features -->
 				    </ul>
 			    </div>
 			    <div class="row">
 			    	<div id="myTabContent" class="tab-content" >
-				        <div class="tab-pane active"  id="precise">
+			    		<!-- Start GetTimee Features -->
+			    	  	<?php
+		    	  		$count_post = 1;
+	        	 		$gettimeefeatures = new WP_Query(array( 'post_type' => 'gettimeefeatures','posts_per_page'=> 6, 'order' => 'ASC'));
+	        	 		while ( $gettimeefeatures->have_posts() ) {
+	        	 		$gettimeefeatures->the_post();
+	        	 		$page_id_features = $post->ID;
+	        	 		$post_slug = $post->post_name;
+
+	        	 		// Looping Gettimee Features
+						$gettimee_features = get_post_meta($page_id_features, 'gettimee-features', TRUE); 
+						foreach ($gettimee_features as $key => $value) { //start foreach
+							$icon_warna_hitam_kuning = wp_get_attachment_url($value['icon-warna-hitam-kuning']);
+							$image_fitur_gettimee_via_mobile = wp_get_attachment_url($value['image-fitur-gettimee-via-mobile']);
+						// untuk aktif pertama kali
+						if ($count_post == 1) { //start if
+						?>
+				        <div class="tab-pane active"  id="<?php echo $post_slug?>">
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth-item.png">
-				            		<h3 class="uppercase space-top-middle">Precise & Accurate (COMING SOON)</h3>
-				            		<p>GetTimee understands mobile workstyle trend. GetTimee supports this by providing working time setting. Employee can select available working time that suits one’s preference. </p>
+				            		<img src="<?php echo $icon_warna_hitam_kuning ?>">
+				            		<h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
+				            		<p><?php echo get_the_content(); ?></p>
 				            	</div>
 				            	<div class="col-md-4 text-center">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+				            		<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
 				            	</div>
 				            </div>
 				        </div>
-				        <div class="tab-pane fade" id="clock">
-				            <div class="row bg-tab-item">
-					            <div class="col-md-8 padding-item-tab">
-					            	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click-item.png">
-				            		<h3 class="uppercase space-top-middle">Generation admin template based</h3>
-					            	Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one. We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.
-					            </div>
-				            <div class="col-md-4 text-center">
-			            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
-			            	</div>
-				            </div>
-				        </div>
-				        <div class="tab-pane fade" id="monitor">
-				            <div class="row bg-tab-item">
-					            <div class="col-md-8 padding-item-tab">
-					            	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover-item.png">
-				            		<h3 class="uppercase space-top-middle">Faucibus orci luctus et</h3>
-					            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.
-					            </div>
-					            <div class="col-md-4 text-center">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
-				            	</div>
-				            </div>
-				        </div>
-				        <div class="tab-pane fade" id="team">
+				        <?php
+						} else { //else
+						?>
+						<div class="tab-pane"  id="<?php echo $post_slug?>">
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc-item.png">
-				            		<h3 class="uppercase space-top-middle">Sliquet quam id dui posuere blandit</h3>
-				            		Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
+				            		<img src="<?php echo $icon_warna_hitam_kuning ?>">
+				            		<h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
+				            		<p><?php echo get_the_content(); ?></p>
 				            	</div>
 				            	<div class="col-md-4 text-center">
-			            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
-			            	</div>
-				            </div>
-				        </div>
-				        <div class="tab-pane fade" id="time">
-				            <div class="row bg-tab-item">
-				            	<div class="col-md-8 padding-item-tab">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time-item.png">
-				            		<h3 class="uppercase space-top-middle">Cras ultricies ligula sed magna</h3>
-				            		Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.
-				            	</div>
-				            	<div class="col-md-4 text-center">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
+				            		<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
 				            	</div>
 				            </div>
 				        </div>
-				        <div class="tab-pane fade" id="news">
-				            <div class="row bg-tab-item">
-				            	<div class="col-md-8 padding-item-tab">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news-item.png">
-				            		<h3 class="uppercase space-top-middle">Cras ultricies ligula sed magna</h3>
-				            		Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
-				            	</div>
-				            	<div class="col-md-4 text-center">
-				            		<img src="<?php echo get_template_directory_uri()?>/assets/images/mockup-1.png">
-				            	</div>
-				            </div>
-				        </div>
+				        <?php 
+				    	} // end of if
+				        } // end of foreach
+				        $count_post++;
+			        	} // end of while
+			        	wp_reset_postdata();
+			        	?> <!-- End GetTimee Features -->
 				    </div>
 			    </div>
 			</div> <!--End of Tabs-->
@@ -336,6 +286,10 @@
 		</div>
 	</div>
 </div> <!-- End of Contact Us -->
+<?php endwhile; ?>
+<?php else : ?>
+<div>ERROR Page : Content Not Found</div>
+<?php endif; ?>
 <?php get_footer(); ?>
 
 
