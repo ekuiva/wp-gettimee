@@ -15,8 +15,9 @@ Version: 1.8
 	  	a. Header
 	  	b. Slider
 	  	c. GetTimee Features
-	  	d. Contact Us
-	  	e. Footer
+	  	d. Tabs Style
+	  	e. Contact Us
+	  	f. Footer
 * 3.0 - Responsive Style
 *     - Responsive 0 - 600 Mobile
 *     - Responsive 600 - 1000 Tablet
@@ -100,7 +101,8 @@ a:focus, a:hover {
 **/
 
 /**
-* Header
+* a. Header
+*
 **/
 .bg-header {
 	background-image: url(assets/images/header.png);
@@ -129,7 +131,8 @@ a:focus, a:hover {
 }
 
 /**
-* Slider
+* b. Slider
+*
 **/
 .lead-slider {
 	font-size: 1.3em;
@@ -163,7 +166,7 @@ a:focus, a:hover {
 }
 
 /**
-* GetTimee Features
+* c. GetTimee Features
 *
 **/
 .bg-features {
@@ -171,7 +174,19 @@ a:focus, a:hover {
 }
 
 /**
-* Contact Us
+* d. Tabs Style
+*
+**/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #464a4c;
+   	background-color: #fff; 
+    border-color: #ddd #ddd #fff; 
+}
+
+
+/**
+* e. Contact Us
+*
 **/
 .bg-contactus {
 	background-color: #f9f9f9;
@@ -182,7 +197,8 @@ a:focus, a:hover {
 
 
 /**
-* Footer
+* f. Footer
+*
 **/
 .bg-footer {
 	background-color: #3a3a3a;

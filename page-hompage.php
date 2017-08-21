@@ -118,22 +118,40 @@
 			<div class="container">
 			    <ul id="myTab" class="nav nav-tabs" role="tablist">
 			      <li class="nav-item">
-			         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">Precise & Accurate</a>
+			         <a href="#precise" class="nav-link active" data-toggle="tab" role="tab">
+			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-bluetooth.png">
+			         	Precise & Accurate
+			         </a>
 			      </li>
 			      <li class="nav-item">
-			         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">Clock in a click</a>
+			         <a href="#clock" class="nav-link" data-toggle="tab" role="tab">
+			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-click.png">
+			         	Clock in a click
+			         </a>
 			      </li>
 			      <li class="nav-item">
-			         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">Monitor Team</a>
+			         <a href="#monitor" class="nav-link" data-toggle="tab" role="tab">
+			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
+			         	Monitor Team
+			         </a>
 			      </li>
 			      <li class="nav-item">
-			         <a href="#team" class="nav-link" data-toggle="tab" role="tab">View Team</a>
+			         <a href="#team" class="nav-link" data-toggle="tab" role="tab">
+			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-loc.png">
+			         	View Team
+			         </a>
 			      </li>
 			      <li class="nav-item">
-			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">Flexible working time setting </a>
+			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
+			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
+			         	Flexible working time setting
+			         </a>
 			      </li>
 			      <li class="nav-item">
-			         <a href="#news" class="nav-link" data-toggle="tab" role="tab">News Broadcast </a>
+			         <a href="#news" class="nav-link" data-toggle="tab" role="tab">
+			         	<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-news.png">
+			         	News Broadcast
+			         </a>
 			      </li>
 			    </ul>
 			    <div id="myTabContent" class="tab-content" >
