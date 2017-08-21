@@ -103,7 +103,7 @@
 </div> <!--End of Slider-->
 
 <!-- GetTimee Features -->
-<div class="container-fluid bg-features margin-top-upper">
+<div class="container-fluid bg-features margin-top-upper space-bottom-high">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1 col-lg-3"></div>
@@ -160,7 +160,7 @@
 			      <li class="col-md-2 nav-item">
 			         <a href="#time" class="nav-link" data-toggle="tab" role="tab">
 			         	<div class="text-center">
-			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-monitor-hover.png">
+			         		<img src="<?php echo get_template_directory_uri()?>/assets/images/tab-icon/icon-time.png">
 			         	</div>
 			         	<div class="text-center hexagon">
 			         		Flexible working time setting
@@ -202,12 +202,15 @@
 </div>
 
 <!-- Choose GetTimee -->
-<div class="container margin-top-upper">
-	<div class="row">
+<div class="container">
+	<div class="col-md-12 text-center">
+		<a href="#choose" id="nav-down-choose"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
+	</div>
+	<div class="row margin-top-upper">
 		<div class="col-md-1 col-lg-3"></div>
 		<div class="col-md-10 col-lg-6">
 			<!-- Smooth scrolling target -->
-			<div id="can-do"></div>
+			<div id="choose"></div>
 			<h4 class="bold yellow-clr">Giving you whats the best.</h4>
 			<h1 class="uppercase">Why Choose GetTimee</h1>
 		</div>

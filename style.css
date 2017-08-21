@@ -181,10 +181,10 @@ a:focus, a:hover {
 	color: #464a4c;
    	background-color: #fff; 
     border-color: #ddd #ddd #fff; 
-    height: 7em;
+    height: 7.2em;
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-	height: 7em;
+	height: 7.2em;
 }
 
 /**
