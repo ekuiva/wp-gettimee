@@ -71,6 +71,9 @@ a:focus, a:hover {
 .space-bottom-high {
 	padding-bottom: 2rem;
 }
+.margin-top-up {
+	margin-top: 2rem;
+}
 .margin-top-upper {
 	margin-top: 5rem;
 }
