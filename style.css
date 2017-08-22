@@ -18,6 +18,7 @@ Version: 1.8
 *	  	d. Tabs Style
 *	  	e. Contact Us
 *	  	f. Footer
+*		g.
 * 3.0 - Responsive Style
 *     - Responsive 0 - 800 Mobile
 *		a. Slider
@@ -107,7 +108,6 @@ a:focus, a:hover {
 	font-weight: 500;
 	color: #3a3a3a;
 }
-
 /**
 * 2.0 - Home Page
 *
@@ -259,7 +259,18 @@ a:focus, a:hover {
 .image-scroll-minus {
 	margin-top: -19px;
 }
+.form-control::-webkit-input-placeholder {color: #7d7d7d; font-size:14px; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder {color: #7d7d7d; font-size:14px; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder {color: #7d7d7d; font-size:14px; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder {color: #7d7d7d; font-size:14px; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {color: #7d7d7d; font-size:14px; }  /* Microsoft Edge */
 
+.modal-padding {
+	padding: 1rem
+}
+.textarea-contact {
+	height: 147px !important;
+}
 
 /**
 * f. Footer

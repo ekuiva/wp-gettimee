@@ -2,24 +2,44 @@
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4"></div>
-              <div class="col-md-5">
-                <h4 class="bold yellow-clr">Request a demo.</h4>
-                <h1 class="uppercase">Contact Us</h1>
-              </div>
-              <div class="col-md-3">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+        <div class="modal-padding">
+          <div class="row">
+            <div class="col-md-3 col-lg-4"></div>
+            <div class="col-md-7 col-lg-4 col-8">
+              <h5 class="bold yellow-clr">Request a demo.</h4>
+              <h2 class="uppercase">Contact Us</h2>
             </div>
-            <div class="row">
-              <p>Fill out the form below and we'll give you a solution.</p>
+            <div class="col-md-2 col-lg-4 col-4">
+              <img class="close" data-dismiss="modal" aria-label="Close" src="<?php echo get_template_directory_uri()?>/assets/images/bg-close.png" class="img-responsive">
             </div>
           </div>
+        </div>
+        <div class="modal-body">
+          <p>Fill out the form below and we'll give you a solution. </p>
+          <div class="row">
+          <div class="col-md-6 ml-auto">
+            <div class="form-group">
+              <input  class="form-control" placeholder="Full Name" >
+            </div>
+            <div class="form-group">
+              <input  class="form-control" placeholder="Company Name" >
+            </div>
+            <div class="form-group">
+              <input  class="form-control" placeholder="Company Contact Number" >
+            </div>
+            <div class="form-group">
+              <input  class="form-control" placeholder="Employee (Number Of)" >
+            </div>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control textarea-contact" rows="6" placeholder="Message For Request"></textarea>
+            </div>
+          </div>
+        </div>
         </div>
         <div class="modal-footer">
           <a href="#" class="btn-outer"><div class="btn">Send</div></a>
