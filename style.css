@@ -224,6 +224,9 @@ a:focus, a:hover {
     background-repeat: no-repeat !important;
 }
 
+.owl-carousel .owl-item img {
+    width: 25rem !important;
+}
 /**
 * c. GetTimee Features
 *
