@@ -172,6 +172,17 @@ a:focus, a:hover {
 .owl-theme .owl-nav [class*=owl-]:hover {
 	background: rgba(134, 151, 145, 0) !important;
 }
+.owl-theme .owl-dots .owl-dot span {
+	background-image: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator.png') !important;
+	background-repeat: no-repeat !important;
+	width: 20px !important;
+    height: 20px !important;
+    border-radius: 0px !important; 
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background-image: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator-active.png') !important; 
+	background-repeat: no-repeat !important;
+}
 /**
 * c. GetTimee Features
 *
