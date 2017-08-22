@@ -178,12 +178,12 @@ if (have_posts()) : while (have_posts()) : the_post();
 				        <div class="tab-pane active"  id="<?php echo $post_slug?>">
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
-				            		<img src="<?php echo $icon_warna_hitam_kuning ?>">
+				            		<img src="<?php echo $icon_warna_hitam_kuning ?>" class="img-responsive">
 				            		<h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
 				            		<p><?php echo get_the_content(); ?></p>
 				            	</div>
 				            	<div class="col-md-4 text-center">
-				            		<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
+				            		<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>" class="img-responsive">
 				            	</div>
 				            </div>
 				        </div>
@@ -193,12 +193,12 @@ if (have_posts()) : while (have_posts()) : the_post();
 						<div class="tab-pane"  id="<?php echo $post_slug?>">
 				            <div class="row bg-tab-item">
 				            	<div class="col-md-8 padding-item-tab">
-				            		<img src="<?php echo $icon_warna_hitam_kuning ?>">
+				            		<img src="<?php echo $icon_warna_hitam_kuning ?>" class="img-responsive">
 				            		<h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
 				            		<p><?php echo get_the_content(); ?></p>
 				            	</div>
 				            	<div class="col-md-4 text-center">
-				            		<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
+				            		<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>" class="img-responsive">
 				            	</div>
 				            </div>
 				        </div>
@@ -251,6 +251,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 				               <div class="col-md-12">
 				                  <p><?php echo get_the_content(); ?></p>
 				               </div>
+				               <div class="col-md-12 text-center">
+					        	<img class="img-responsive" src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
+					           </div>
 				            </div>
 				        </div> <!-- end content tabs -->
 			      	</div> <!-- end tab active -->
@@ -262,7 +265,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					    <a data-toggle="collapse" class="uppercase" data-parent="#accordion" href="#collapse-<?php echo $count_post?>" aria-expanded="true" aria-controls="collapseTwo">
 				         <div class="card-header" role="tab" id="heading-<?php echo $count_post?>">
 				            <p class="mb-0 font-14">
-				            	<img src="<?php echo $icon_warna_putih; ?>">
+				            	<img class="img-responsive" src="<?php echo $icon_warna_putih; ?>">
 				               <?php echo get_the_title();?>
 				            </p>
 				         </div>
@@ -272,6 +275,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 				               <div class="col-md-12">
 				                  <p><?php echo get_the_content(); ?></p>
 				               </div>
+				               <div class="col-md-12 text-center">
+					        	<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
+					           </div>
 				            </div>
 				        </div>
 			        </div> <!-- end tabs collapse -->
@@ -307,28 +313,28 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container space-top-high">
 		<div class="row">
 			<div class="col-md-3">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-transparency.png">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-transparency.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Transparency</h5>
 					<p>The control of employee’s working time is managed fairly and transparently</p>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-simple.png">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-simple.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Simple</h5>
 					<p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-reliability-hover.png">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-reliability-hover.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Reliability</h5>
 					<p>It works anywhere with majority devices</p>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-satisfaction.png">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-satisfaction.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Satisfaction</h5>
 					<p>Transparent and uncomplicated system will increase satisfaction from all employees</p>
