@@ -91,7 +91,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="col-md-12 text-center">
 		<a href="#getTimee" id="nav-down-gettimee-fitur"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
 	</div>
-	<div class="container margin-top-upper">
+	<div class="margin-top-upper">
 		<div class="row">
 			<div class="col-md-1 col-lg-3"></div>
 			<div class="col-md-10 col-lg-6">
@@ -304,39 +304,37 @@ if (have_posts()) : while (have_posts()) : the_post();
 		</div>
 		<div class="col-md-1 col-lg-3"></div>
 	</div>
-	<div class="row space-top-high">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-transparency.png">
-					<div class="margin-top-up">
-						<h5 class="yellow-clr bold">Transparency</h5>
-						<p>The control of employee’s working time is managed fairly and transparently</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-simple.png">
-					<div class="margin-top-up">
-						<h5 class="yellow-clr bold">Simple</h5>
-						<p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-reliability-hover.png">
-					<div class="margin-top-up">
-						<h5 class="yellow-clr bold">Reliability</h5>
-						<p>It works anywhere with majority devices</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-satisfaction.png">
-					<div class="margin-top-up">
-						<h5 class="yellow-clr bold">Satisfaction</h5>
-						<p>Transparent and uncomplicated system will increase satisfaction from all employees</p>
-					</div>
+	<div class="container space-top-high">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-transparency.png">
+				<div class="margin-top-up">
+					<h5 class="yellow-clr bold">Transparency</h5>
+					<p>The control of employee’s working time is managed fairly and transparently</p>
 				</div>
 			</div>
-		</div>
+			<div class="col-md-3">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-simple.png">
+				<div class="margin-top-up">
+					<h5 class="yellow-clr bold">Simple</h5>
+					<p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-reliability-hover.png">
+				<div class="margin-top-up">
+					<h5 class="yellow-clr bold">Reliability</h5>
+					<p>It works anywhere with majority devices</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-satisfaction.png">
+				<div class="margin-top-up">
+					<h5 class="yellow-clr bold">Satisfaction</h5>
+					<p>Transparent and uncomplicated system will increase satisfaction from all employees</p>
+				</div>
+			</div>
+		</div>	
 	</div>
 </div> <!-- End of Choose GetTimee -->
 
@@ -345,7 +343,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	 <div class="col-md-12 text-center">
 		<a href="#contact" id="nav-down-contact"><img class="image-scroll-minus" src="<?php echo get_template_directory_uri()?>/assets/images/scroll.png" class="img-responsive"></a>
 	</div>
-	<div class="container margin-top-upper" id="contact">
+	<div class="margin-top-upper" id="contact">
 		<div class="row">
 			<div class="col-md-1 col-lg-3"></div>
 			<div class="col-md-10 col-lg-6">
