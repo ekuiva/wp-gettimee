@@ -103,8 +103,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 			<div class="col-md-1 col-lg-3"></div>
 		</div>
 		<div class="row space-top-high">
-			<!-- Tabs -->
-			<div class="container">
+			<!-- Start Tabs Desktop-->
+			<div class="container tabs-desktop">
 			    <div class="row">
 			    	<ul id="myTab" class="nav nav-tabs" role="tablist">
 			    		<!-- Start GetTimee Features -->
@@ -211,7 +211,77 @@ if (have_posts()) : while (have_posts()) : the_post();
 			        	?> <!-- End GetTimee Features -->
 				    </div>
 			    </div>
-			</div> <!--End of Tabs-->
+			</div> <!--End of Tabs Desktop-->
+
+			<!-- Start Tabs Mobile -->
+			<div class="container tabs-mobile">
+			    <div id="accordion" role="tablist" aria-multiselectable="true">
+			      	<!-- Start GetTimee Features -->
+				  	<?php
+						$count_post = 1;
+						$gettimeefeatures = new WP_Query(array( 'post_type' => 'gettimeefeatures','posts_per_page'=> 6, 'order' => 'ASC'));
+						while ( $gettimeefeatures->have_posts() ) {
+						$gettimeefeatures->the_post();
+						$page_id_features = $post->ID;
+						$post_slug = $post->post_name;
+
+						// Looping Gettimee Features
+						$gettimee_features = get_post_meta($page_id_features, 'gettimee-features', TRUE); 
+						foreach ($gettimee_features as $key => $value) { //start foreach
+						$icon_warna_hitam_kuning = wp_get_attachment_url($value['icon-warna-hitam-kuning']);
+						$image_fitur_gettimee_via_mobile = wp_get_attachment_url($value['image-fitur-gettimee-via-mobile']);
+					// untuk aktif pertama kali
+					if ($count_post == 1) { //start if
+					?>
+					<!-- tab active -->
+			      	<div class="card">
+				      	<!-- start header tabs -->
+				      	<a data-toggle="collapse" class="uppercase" data-parent="#accordion" href="#collapse-<?php echo $count_post?>" aria-expanded="true" aria-controls="collapse-<?php echo $count_post?>">
+					        <div class="card-header" role="tab" id="heading-<?php echo $count_post?>">
+					            <p class="mb-0 font-14">
+					               <?php echo get_the_title();?>
+					            </p>
+					        </div>
+				        </a> <!-- end header tabs -->
+				         <!-- content tabs -->
+				        <div id="collapse-<?php echo $count_post?>" class="collapse show" role="tabpanel" aria-labelledby="heading-<?php echo $count_post?>">
+				            <div class="card-block">
+				               <div class="col-md-12">
+				                  <p><?php echo get_the_content(); ?></p>
+				               </div>
+				            </div>
+				        </div> <!-- end content tabs -->
+			      	</div> <!-- end tab active -->
+			      	<?php
+				  	} else { //else
+				  	?>
+				  	<!-- tabs collapse -->
+				    <div class="card">
+					    <a data-toggle="collapse" class="uppercase" data-parent="#accordion" href="#collapse-<?php echo $count_post?>" aria-expanded="true" aria-controls="collapseTwo">
+				         <div class="card-header" role="tab" id="heading-<?php echo $count_post?>">
+				            <p class="mb-0 font-14">
+				               <?php echo get_the_title();?>
+				            </p>
+				         </div>
+				        </a>
+				        <div id="collapse-<?php echo $count_post?>" class="collapse" role="tabpanel" aria-labelledby="heading-<?php echo $count_post?>">
+				            <div class="card-block">
+				               <div class="col-md-12">
+				                  <p><?php echo get_the_content(); ?></p>
+				               </div>
+				            </div>
+				        </div>
+			        </div> <!-- end tabs collapse -->
+			        <?php 
+				    } // end of if
+				    } // end of foreach
+				    $count_post++;
+				    } // end of while
+				    wp_reset_postdata();
+				    ?> <!-- End GetTimee Features -->
+			    </div>
+			</div>
+			<!-- End for Tabs Mobile -->
 		</div>
 	</div>
 </div>

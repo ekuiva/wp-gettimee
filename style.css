@@ -12,16 +12,22 @@ Version: 1.8
 * 
 * 1.0 - General
 * 2.0 - Home Page
-	  	a. Header
-	  	b. Slider
-	  	c. GetTimee Features
-	  	d. Tabs Style
-	  	e. Contact Us
-	  	f. Footer
+*	  	a. Header
+*	  	b. Slider
+*	  	c. GetTimee Features
+*	  	d. Tabs Style
+*	  	e. Contact Us
+*	  	f. Footer
 * 3.0 - Responsive Style
-*     - Responsive 0 - 600 Mobile
-*     - Responsive 600 - 1000 Tablet
+*     - Responsive 0 - 800 Mobile
+*		a. Slider
+*		b. Tabs Homepage Desktop
+*		c. Tabs Home Mobile
+*		d. 
+*     - Responsive 800 - 1000 Tablet
+*		a. 
 *     - Responsive 1000 Desktop
+* 		a. Tabs Home Mobile
 *
 *
 **/
@@ -94,6 +100,7 @@ a:focus, a:hover {
 .font-14 {
 	font-size: 14px;
 	font-weight: 500;
+	color: #3a3a3a;
 }
 
 /**
@@ -277,12 +284,12 @@ a:focus, a:hover {
 
 
 /*
-* Responsive 0 - 600 Mobile
+* Responsive 0 - 800 Mobile
 */
-@media(min-width: 0px) and (max-width: 600px){
+@media(min-width: 0px) and (max-width: 800px){
 	
 	/**
-	* Slider
+	* a. Slider
 	**/
 	.padding-left-0 {
 		padding-left: 15px;
@@ -290,12 +297,27 @@ a:focus, a:hover {
 	.padding-right-0 {
 		padding-right: 15px;
 	}
+
+	/**
+	* b. Tabs Homepage Desktop
+	**/
+	.tabs-desktop {
+		display: none;
+	}
+
+	/**
+	* c. Tabs Home Mobile
+	**/
+	.tabs-mobile {
+		width: 100%;
+	}
+
 }
 
 /*
-* Responsive 600 - 1000 Tablet
+* Responsive 800 - 1000 Tablet
 */
-@media(min-width: 600px) and (max-width: 1000px){
+@media(min-width: 800px) and (max-width: 1000px){
 	
 }
 
@@ -303,5 +325,10 @@ a:focus, a:hover {
 * Responsive 1000 Desktop
 */
 @media(min-width: 1000px){
-	
+	/**
+	* a. Tabs Home Mobile
+	**/
+	.tabs-mobile {
+		display: none;
+	}
 }
