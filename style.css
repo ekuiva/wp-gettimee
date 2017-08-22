@@ -178,6 +178,7 @@ a:focus, a:hover {
 	width: 20px !important;
     height: 20px !important;
     border-radius: 0px !important; 
+    background-color: #fffefe !important;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background-image: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator-active.png') !important; 
