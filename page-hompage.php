@@ -228,6 +228,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 						// Looping Gettimee Features
 						$gettimee_features = get_post_meta($page_id_features, 'gettimee-features', TRUE); 
 						foreach ($gettimee_features as $key => $value) { //start foreach
+							$icon_warna_putih = wp_get_attachment_url($value['icon-warna-putih']);
 						$icon_warna_hitam_kuning = wp_get_attachment_url($value['icon-warna-hitam-kuning']);
 						$image_fitur_gettimee_via_mobile = wp_get_attachment_url($value['image-fitur-gettimee-via-mobile']);
 					// untuk aktif pertama kali
@@ -239,7 +240,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 				      	<a data-toggle="collapse" class="uppercase" data-parent="#accordion" href="#collapse-<?php echo $count_post?>" aria-expanded="true" aria-controls="collapse-<?php echo $count_post?>">
 					        <div class="card-header" role="tab" id="heading-<?php echo $count_post?>">
 					            <p class="mb-0 font-14">
-					               <?php echo get_the_title();?>
+					            	<img src="<?php echo $icon_warna_putih; ?>">
+					               	<?php echo get_the_title();?>
 					            </p>
 					        </div>
 				        </a> <!-- end header tabs -->
@@ -260,6 +262,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					    <a data-toggle="collapse" class="uppercase" data-parent="#accordion" href="#collapse-<?php echo $count_post?>" aria-expanded="true" aria-controls="collapseTwo">
 				         <div class="card-header" role="tab" id="heading-<?php echo $count_post?>">
 				            <p class="mb-0 font-14">
+				            	<img src="<?php echo $icon_warna_putih; ?>">
 				               <?php echo get_the_title();?>
 				            </p>
 				         </div>
