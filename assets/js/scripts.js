@@ -2,6 +2,7 @@
 $('.slider-homepage').owlCarousel({
     margin:10,
     nav:true,
+    navText: ["<img src='http://gettimee.ekuiva.com/wp-content/uploads/2017/08/left.png'>","<img src='http://gettimee.ekuiva.com/wp-content/uploads/2017/08/right.png'>"],
     responsive:{
         0:{
             items:1
