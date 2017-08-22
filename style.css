@@ -52,7 +52,7 @@ body {
 	background-color: #f0cb40;
 	text-transform: uppercase;
 	border: solid 2px #ffffff;
-	font-weight: bold;
+	font-weight: 600;
 	color: #3a3a3a;
 }
 .btn:hover{
@@ -73,7 +73,7 @@ a:focus, a:hover {
 	text-decoration: none;
 }
 .bold {
-	font-weight: bold;
+	font-weight: 600;
 }
 .uppercase {
 	text-transform: uppercase;

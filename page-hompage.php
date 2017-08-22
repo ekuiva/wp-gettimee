@@ -361,7 +361,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			<div class="col-md-1 col-lg-3"></div>
 		</div>
 		<div class="text-center space-top-high space-bottom-upper">
-			<a href="#" class="btn-outer"><div class="btn">Contact Us</div></a>
+			<a href="#" class="btn-outer" data-toggle="modal" data-target=".bd-example-modal-lg"><div class="btn">Contact Us</div></a>
 		</div>
 	</div>
 </div> <!-- End of Contact Us -->
