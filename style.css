@@ -64,8 +64,13 @@ body {
     background-color: #f0cb40;
     display: inline-block;
 }
+a{	
+	color: #3a3a3a;
+	text-decoration: none;
+}
 a:focus, a:hover {
 	color: #3a3a3a;
+	text-decoration: none;
 }
 .bold {
 	font-weight: bold;
@@ -311,7 +316,6 @@ a:focus, a:hover {
 	.tabs-mobile {
 		width: 100%;
 	}
-
 }
 
 /*

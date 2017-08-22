@@ -229,8 +229,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 						$gettimee_features = get_post_meta($page_id_features, 'gettimee-features', TRUE); 
 						foreach ($gettimee_features as $key => $value) { //start foreach
 							$icon_warna_putih = wp_get_attachment_url($value['icon-warna-putih']);
-						$icon_warna_hitam_kuning = wp_get_attachment_url($value['icon-warna-hitam-kuning']);
-						$image_fitur_gettimee_via_mobile = wp_get_attachment_url($value['image-fitur-gettimee-via-mobile']);
+							$icon_warna_hitam_kuning = wp_get_attachment_url($value['icon-warna-hitam-kuning']);
+							$image_fitur_gettimee_via_mobile = wp_get_attachment_url($value['image-fitur-gettimee-via-mobile']);
 					// untuk aktif pertama kali
 					if ($count_post == 1) { //start if
 					?>
@@ -249,7 +249,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 				        <div id="collapse-<?php echo $count_post?>" class="collapse show" role="tabpanel" aria-labelledby="heading-<?php echo $count_post?>">
 				            <div class="card-block">
 				               <div class="col-md-12">
-				                  <p><?php echo get_the_content(); ?></p>
+				               		<h3 class="uppercase"><?php echo get_the_title(); ?></h3>
+				                 	<p><?php echo get_the_content(); ?></p>
 				               </div>
 				               <div class="col-md-12 text-center">
 					        	<img class="img-responsive" src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
@@ -273,7 +274,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 				        <div id="collapse-<?php echo $count_post?>" class="collapse" role="tabpanel" aria-labelledby="heading-<?php echo $count_post?>">
 				            <div class="card-block">
 				               <div class="col-md-12">
-				                  <p><?php echo get_the_content(); ?></p>
+				               		<h3 class="uppercase"><?php echo get_the_title(); ?></h3>
+				                  	<p><?php echo get_the_content(); ?></p>
 				               </div>
 				               <div class="col-md-12 text-center">
 					        	<img src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
@@ -312,28 +314,28 @@ if (have_posts()) : while (have_posts()) : the_post();
 	</div>
 	<div class="container space-top-high">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-transparency.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Transparency</h5>
 					<p>The control of employee’s working time is managed fairly and transparently</p>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-simple.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Simple</h5>
 					<p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-reliability-hover.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Reliability</h5>
 					<p>It works anywhere with majority devices</p>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/icon/icon-satisfaction.png" class="img-responsive">
 				<div class="margin-top-up">
 					<h5 class="yellow-clr bold">Satisfaction</h5>
