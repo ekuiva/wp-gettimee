@@ -330,6 +330,7 @@ if (have_posts()) : while (have_posts()) : the_post();
             <div class="col-md-10 col-lg-6">
                 <!-- Smooth scrolling target -->
                 <div id="choose"></div>
+                <h4 class="bold yellow-clr">Giving you whats the best.</h4>
                 <h1 class="uppercase">Why Choose GetTimee</h1>
             </div>
             <div class="col-md-1 col-lg-3"></div>
