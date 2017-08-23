@@ -70,18 +70,19 @@ if (have_posts()) : while (have_posts()) : the_post();
                         $image_lider = wp_get_attachment_url($value['image-slider']);
                         ?>
                         <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 padding-right-0">
-                                    <div class="border-outer">
-                                        <div class="border">
-                                            <h3 class="lead-slider"><?php echo $top_title; ?></h3>
-                                            <h4 class="title-slider"><?php echo $main_title ?></h4>
-                                            <p class="description-slider"><?php echo $description_slider ?></p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 p-0">
+                                        <div class="border-shadow m-1 p-1 rounded-left">
+                                            <div class="border-inner-yellow p-2 rounded-left">
+                                                <h3 class="lead-slider"><?php echo $top_title; ?></h3>
+                                                <h4 class="title-slider"><?php echo $main_title ?></h4>
+                                                <p class="description-slider"><?php echo $description_slider ?></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 padding-left-0">
-                                    <img class="img-responsive img-slider" src="<?php echo $image_lider ?>">
+                                    <div class="col-lg-6 p-0"><img class="rounded-right"
+                                                                   src="<?php echo $image_lider ?>"></div>
                                 </div>
                             </div>
                         </div>
@@ -188,16 +189,20 @@ if (have_posts()) : while (have_posts()) : the_post();
                                     if ($count_post == 1) { //start if
                                         ?>
                                         <div class="tab-pane active" id="<?php echo $post_slug ?>">
-                                            <div class="row bg-tab-item">
-                                                <div class="col-md-8 padding-item-tab">
-                                                    <img src="<?php echo $icon_warna_hitam_kuning ?>"
-                                                         class="img-responsive">
-                                                    <h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
-                                                    <p><?php echo get_the_content(); ?></p>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <img src="<?php echo $image_fitur_gettimee_via_mobile; ?>"
-                                                         class="img-responsive">
+                                            <div class="row bg-tab-item rounded p-1">
+                                                <div class="rounded border-inner-yellow p-4">
+                                                    <div class="row">
+                                                        <div class="col-md-8 padding-item-tab">
+                                                            <img src="<?php echo $icon_warna_hitam_kuning ?>"
+                                                                 class="img-responsive">
+                                                            <h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
+                                                            <p><?php echo get_the_content(); ?></p>
+                                                        </div>
+                                                        <div class="col-md-4 text-center">
+                                                            <img src="<?php echo $image_fitur_gettimee_via_mobile; ?>"
+                                                                 class="img-responsive">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -205,16 +210,20 @@ if (have_posts()) : while (have_posts()) : the_post();
                                     } else { //else
                                         ?>
                                         <div class="tab-pane" id="<?php echo $post_slug ?>">
-                                            <div class="row bg-tab-item">
-                                                <div class="col-md-8 padding-item-tab">
-                                                    <img src="<?php echo $icon_warna_hitam_kuning ?>"
-                                                         class="img-responsive">
-                                                    <h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
-                                                    <p><?php echo get_the_content(); ?></p>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <img src="<?php echo $image_fitur_gettimee_via_mobile; ?>"
-                                                         class="img-responsive">
+                                            <div class="row bg-tab-item rounded p-1">
+                                                <div class="rounded border-inner-yellow p-4">
+                                                    <div class="row">
+                                                        <div class="col-md-8 padding-item-tab">
+                                                            <img src="<?php echo $icon_warna_hitam_kuning ?>"
+                                                                 class="img-responsive">
+                                                            <h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
+                                                            <p><?php echo get_the_content(); ?></p>
+                                                        </div>
+                                                        <div class="col-md-4 text-center">
+                                                            <img src="<?php echo $image_fitur_gettimee_via_mobile; ?>"
+                                                                 class="img-responsive">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

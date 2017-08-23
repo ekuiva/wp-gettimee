@@ -5,10 +5,12 @@ $('.slider-homepage').owlCarousel({
     navText: ["<img src='http://gettimee.ekuiva.com/wp-content/uploads/2017/08/left.png'>","<img src='http://gettimee.ekuiva.com/wp-content/uploads/2017/08/right.png'>"],
     responsive:{
         0:{
-            items:1
+            items: 1,
+            nav: false
         },
-        600:{
-            items:1
+        800: {
+            items: 1,
+            nav: false
         },
         1000:{
             items:1
