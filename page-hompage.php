@@ -100,15 +100,17 @@ if (have_posts()) : while (have_posts()) : the_post();
                                                                   class="img-responsive"></a>
         </div>
         <div class="margin-top-upper">
-            <div class="row">
-                <div class="col-md-1 col-lg-3"></div>
-                <div class="col-md-10 col-lg-6">
-                    <h4 class="bold yellow-clr">Everything you need for your team.</h4>
-                    <h1 class="uppercase">GetTimee Features</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 col-lg-3"></div>
+                    <div class="col-md-10 col-lg-6">
+                        <h4 class="bold yellow-clr">Everything you need for your team.</h4>
+                        <h1 class="uppercase">GetTimee Features</h1>
+                    </div>
+                    <!-- Smooth scrolling target -->
+                    <div id="getTimee"></div>
+                    <div class="col-md-1 col-lg-3"></div>
                 </div>
-                <!-- Smooth scrolling target -->
-                <div id="getTimee"></div>
-                <div class="col-md-1 col-lg-3"></div>
             </div>
             <div class="row space-top-high">
                 <!-- Start Tabs Desktop-->
@@ -381,13 +383,15 @@ if (have_posts()) : while (have_posts()) : the_post();
                                                           class="img-responsive"></a>
         </div>
         <div class="margin-top-upper" id="contact">
-            <div class="row">
-                <div class="col-md-1 col-lg-3"></div>
-                <div class="col-md-10 col-lg-6">
-                    <h4 class="bold yellow-clr">Get started for free.</h4>
-                    <h1 class="uppercase">Try GetTimee And Track Your Team Now</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 col-lg-3"></div>
+                    <div class="col-md-10 col-lg-6">
+                        <h4 class="bold yellow-clr">Get started for free.</h4>
+                        <h1 class="uppercase">Try GetTimee And Track Your Team Now</h1>
+                    </div>
+                    <div class="col-md-1 col-lg-3"></div>
                 </div>
-                <div class="col-md-1 col-lg-3"></div>
             </div>
             <div class="text-center space-top-high space-bottom-upper">
                 <a href="#" class="btn-outer" data-toggle="modal" data-target=".bd-example-modal-lg">
