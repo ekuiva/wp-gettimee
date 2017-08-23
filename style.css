@@ -381,7 +381,6 @@ a:focus, a:hover {
     height: auto;
     color: #fff;
     font-size: 12px;
-    padding-top: 1em;
 }
 
 .logo-fb {
@@ -390,7 +389,7 @@ a:focus, a:hover {
 }
 
 .footer-space {
-    margin: 10px 0px;
+    margin: 12px 0px;
 }
 
 /**

@@ -28,20 +28,20 @@
     <div class="container-fluid bg-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 text-left footer-space">
+                <div class="col-md-4 text-left footer-space pt-2">
                     <a href="<?php echo get_home_url() ?>"><img
                                 src="<?php echo get_template_directory_uri() ?>/assets/images/logo-gettimee.png"></a>
                     <span>&copy; Copyright <?php echo date("Y"); ?></span>
                 </div>
-                <div class="col-md-4 text-center footer-space">
+                <div class="col-md-4 text-center footer-space pt-2">
                     <a href="https://www.facebook.com/pages/PT-Drife-Solusi-Integrasi/1442772669336796"
                        target="blank"><img class="logo-fb"
                                            src="<?php echo get_template_directory_uri() ?>/assets/images/logo-fb.png"></a>
                 </div>
                 <div class="col-md-4 text-right footer-space">
-                    <p>PT. DRIFE SOLUSI INTEGRASI<br/>
-                        +62 21 2854 2877<br/>
-                        info@gettimeeapp.com</p>
+                    PT. DRIFE SOLUSI INTEGRASI<br/>
+                    +62 21 2854 2877<br/>
+                    info@gettimeeapp.com
                 </div>
             </div>
         </div>
