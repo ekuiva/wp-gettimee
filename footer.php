@@ -7,7 +7,7 @@
               <div class="col-md-3 col-lg-2"></div>
               <div class="col-md-7 col-lg-8 col-8">
               <h5 class="bold yellow-clr">Request a demo.</h5>
-                  <h3>Get One Month of Free Session</h3>
+                  <h3 class="text-uppercase">Get One Month of Free Session</h3>
             </div>
               <div class="col-md-2 col-lg-2 col-4 pr-4 pt-1">
               <img class="close" data-dismiss="modal" aria-label="Close" src="<?php echo get_template_directory_uri()?>/assets/images/bg-close.png" class="img-responsive">
