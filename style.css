@@ -61,8 +61,11 @@ body {
     background-color: #f9d758;
 }
 
-.text-hover:hover > img {
+.text-hover > img {
     opacity: 0.5;
+}
+.text-hover:hover > img {
+    opacity: 1;
 }
 
 
@@ -318,6 +321,9 @@ a:focus, a:hover {
     font-size: 14px;
 }
 
+.form-control {
+    border: 1px solid #f0cb40
+}
 /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder {
     color: #7d7d7d;
@@ -390,11 +396,11 @@ a:focus, a:hover {
     * a. Slider
     **/
     .padding-left-0 {
-        padding-left: 15px;
+        padding-left: 0px;
     }
 
     .padding-right-0 {
-        padding-right: 15px;
+        padding-right: 0px;
     }
 
     /**
