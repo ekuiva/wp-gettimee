@@ -312,7 +312,7 @@ a:focus, a:hover {
 }
 
 /* Mozilla Firefox 4 to 18 */
-.form-control::-moz-placeholder {
+.form-control:-moz-placeholder {
     color: #7d7d7d;
     font-size: 14px;
 }
@@ -324,13 +324,12 @@ a:focus, a:hover {
 }
 
 /* Internet Explorer 10-11 */
-.form-control::-ms-input-placeholder {
+.form-control:-ms-input-placeholder {
     color: #7d7d7d;
     font-size: 14px;
 }
 
 /* Microsoft Edge */
-
 .modal-padding {
     padding: 1rem
 }
@@ -395,13 +394,31 @@ a:focus, a:hover {
     .tabs-mobile {
         width: 100%;
     }
+
+    /**
+    * d. Recaptcha
+    ***/
+    #rc-imageselect, .g-recaptcha {
+        transform: scale(0.72);
+        -webkit-transform: scale(0.72);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
 }
 
 /*
 * Responsive 800 - 1000 Tablet
 */
 @media (min-width: 800px) and (max-width: 1000px) {
-
+    /**
+    * a. Recaptcha
+    ***/
+    #rc-imageselect, .g-recaptcha {
+        transform: scale(0.72);
+        -webkit-transform: scale(0.72);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
 }
 
 /*
