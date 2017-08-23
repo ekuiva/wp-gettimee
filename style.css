@@ -47,13 +47,14 @@ body {
 }
 
 .btn {
-    border-radius: 2px;
     background-color: #f0cb40;
     text-transform: uppercase;
     border: solid 2px #ffffff;
     font-weight: 600;
     color: #3a3a3a;
     cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Raleway';
 }
 
 .btn:hover {
@@ -73,6 +74,7 @@ body {
     padding: .3rem .3rem;
     background-color: #f0cb40;
     display: inline-block;
+    border-radius: 3px;
 }
 
 a {
@@ -361,6 +363,11 @@ a:focus, a:hover {
 .screen-reader-response {
     display: none;
 }
+
+.close {
+    opacity: 1;
+}
+
 /**
 * f. Footer
 *
