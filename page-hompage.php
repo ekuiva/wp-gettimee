@@ -132,6 +132,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                                 $gettimee_features = get_post_meta($page_id_features, 'gettimee-features', TRUE);
                                 foreach ($gettimee_features as $key => $value) { //start foreach
                                     $icon_warna_putih = wp_get_attachment_url($value['icon-warna-putih']);
+                                    $icon_warna_hitam_kuning = wp_get_attachment_url($value['icon-warna-hitam-kuning']);
                                     // untuk aktif pertama kali
                                     if ($count_post == 1) { //start if
                                         ?>
@@ -139,7 +140,9 @@ if (have_posts()) : while (have_posts()) : the_post();
                                             <a href="#<?php echo $post_slug ?>" class="nav-link active"
                                                data-toggle="tab" role="tab">
                                                 <div class="text-center">
-                                                    <img src="<?php echo $icon_warna_putih; ?>">
+                                                    <img class="icon-normal" src="<?php echo $icon_warna_putih; ?>">
+                                                    <img class="icon-active"
+                                                         src="<?php echo $icon_warna_hitam_kuning; ?>">
                                                 </div>
                                                 <div class="text-center bg-tab uppercase">
                                                     <p class="font-14"><?php echo get_the_title() ?></p>
@@ -153,7 +156,9 @@ if (have_posts()) : while (have_posts()) : the_post();
                                             <a href="#<?php echo $post_slug ?>" class="nav-link" data-toggle="tab"
                                                role="tab">
                                                 <div class="text-center">
-                                                    <img src="<?php echo $icon_warna_putih; ?>">
+                                                    <img class="icon-normal" src="<?php echo $icon_warna_putih; ?>">
+                                                    <img class="icon-active"
+                                                         src="<?php echo $icon_warna_hitam_kuning; ?>">
                                                 </div>
                                                 <div class="text-center bg-tab uppercase">
                                                     <p class="font-14"><?php echo get_the_title() ?></p>
@@ -193,8 +198,9 @@ if (have_posts()) : while (have_posts()) : the_post();
                                                 <div class="rounded border-inner-yellow p-4">
                                                     <div class="row">
                                                         <div class="col-md-8 padding-item-tab">
-                                                            <img src="<?php echo $icon_warna_hitam_kuning ?>"
-                                                                 class="img-responsive">
+                                                            <div class="bg-icon"><img
+                                                                        src="<?php echo $icon_warna_hitam_kuning ?>"
+                                                                        class="img-responsive"></div>
                                                             <h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
                                                             <p><?php echo get_the_content(); ?></p>
                                                         </div>
@@ -214,8 +220,9 @@ if (have_posts()) : while (have_posts()) : the_post();
                                                 <div class="rounded border-inner-yellow p-4">
                                                     <div class="row">
                                                         <div class="col-md-8 padding-item-tab">
-                                                            <img src="<?php echo $icon_warna_hitam_kuning ?>"
-                                                                 class="img-responsive">
+                                                            <div class="bg-icon"><img
+                                                                        src="<?php echo $icon_warna_hitam_kuning ?>"
+                                                                        class="img-responsive"></div>
                                                             <h3 class="uppercase space-top-middle"><?php echo get_the_title(); ?></h3>
                                                             <p><?php echo get_the_content(); ?></p>
                                                         </div>
