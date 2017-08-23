@@ -60,6 +60,11 @@ body {
     background-color: #f9d758;
 }
 
+.text-hover:hover > img {
+    opacity: 0.5;
+}
+
+
 .btn-outer {
     padding: .3rem .3rem;
     background-color: #f0cb40;
@@ -161,6 +166,9 @@ a:focus, a:hover {
     padding-top: 11%;
 }
 
+.img-scroll-up {
+    margin-bottom: -28px;
+}
 /**
 * b. Slider
 *
@@ -338,6 +346,9 @@ a:focus, a:hover {
     height: 147px !important;
 }
 
+.screen-reader-response {
+    display: none;
+}
 /**
 * f. Footer
 *

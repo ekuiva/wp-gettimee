@@ -18,8 +18,8 @@ if (have_posts()) : while (have_posts()) : the_post();
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-lg-7"></div>
-                <div class="col-md-7 col-lg-5 space-top-high">
-                    <div class="text-left">
+                <div class="col-md-7 col-lg-4 space-top-high">
+                    <div class="text-center">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-gettimee.png"
                              class="img-responsive">
                     </div>
@@ -30,7 +30,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                         GetTimee is system that provide team monitoring that includes time and location with insight of
                         where and what employees are working on.
                     </p>
-                    <a href="#" class="btn-outer">
+                    <a href="#" class="btn-outer" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <div class="btn">Free Trial</div>
                     </a>
                 </div>
@@ -39,7 +39,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                 <div class="col-md-12 text-center">
                     <a href="#can-do" id="nav-down"><img
                                 src="<?php echo get_template_directory_uri() ?>/assets/images/scroll.png"
-                                class="img-responsive"></a>
+                                class="img-responsive img-scroll-up"></a>
                 </div>
             </div>
         </div>
@@ -337,33 +337,33 @@ if (have_posts()) : while (have_posts()) : the_post();
         </div>
         <div class="container space-top-high">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 text-hover">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-transparency.png"
-                         class="img-responsive">
+                         class="img-responsive hover-image">
                     <div class="margin-top-up">
                         <h5 class="yellow-clr bold">Transparency</h5>
                         <p>The control of employee’s working time is managed fairly and transparently</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 text-hover">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-simple.png"
-                         class="img-responsive">
+                         class="img-responsive hover-image">
                     <div class="margin-top-up">
                         <h5 class="yellow-clr bold">Simple</h5>
                         <p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 text-hover">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-reliability-hover.png"
-                         class="img-responsive">
+                         class="img-responsive hover-image">
                     <div class="margin-top-up">
                         <h5 class="yellow-clr bold">Reliability</h5>
                         <p>It works anywhere with majority devices</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 text-hover">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-satisfaction.png"
-                         class="img-responsive">
+                         class="img-responsive hover-image">
                     <div class="margin-top-up">
                         <h5 class="yellow-clr bold">Satisfaction</h5>
                         <p>Transparent and uncomplicated system will increase satisfaction from all employees</p>
