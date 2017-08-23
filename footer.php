@@ -2,10 +2,10 @@
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-padding">
+          <div class="modal-padding pt-4">
           <div class="row">
-              <div class="col-md-3 col-lg-2"></div>
-              <div class="col-md-7 col-lg-8 col-8">
+              <div class="col-md-2 col-lg-2"></div>
+              <div class="col-md-7 col-lg-8 col-7 ml-1-mobile">
               <h5 class="bold yellow-clr">Request a demo.</h5>
                   <h3 class="text-uppercase">Get One Month of Free Session</h3>
             </div>

@@ -429,10 +429,22 @@ a:focus, a:hover {
     * d. Recaptcha
     ***/
     #rc-imageselect, .g-recaptcha {
-        transform: scale(0.72);
-        -webkit-transform: scale(0.72);
+        transform: scale(0.74);
+        -webkit-transform: scale(0.74);
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
+        margin-right: -5.1em !important;
+    }
+
+    /**
+    * e. Contact Us
+    **/
+    .pr-1-mobile {
+        padding-right: 1rem !important;
+    }
+
+    .ml-1-mobile {
+        margin-left: 1em;
     }
 }
 
@@ -444,10 +456,11 @@ a:focus, a:hover {
     * a. Recaptcha
     ***/
     #rc-imageselect, .g-recaptcha {
-        transform: scale(0.72);
-        -webkit-transform: scale(0.72);
+        transform: scale(0.67);
+        -webkit-transform: scale(0.67);
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
+        margin-right: -6.4em !important;
     }
 }
 
