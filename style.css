@@ -53,6 +53,7 @@ body {
     border: solid 2px #ffffff;
     font-weight: 600;
     color: #3a3a3a;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -201,6 +202,10 @@ a:focus, a:hover {
 }
 
 .padding-left-0 {
+    padding-left: 0px;
+}
+
+.padding-left-nol {
     padding-left: 0px;
 }
 

@@ -4,12 +4,12 @@
       <div class="modal-content">
         <div class="modal-padding">
           <div class="row">
-            <div class="col-md-3 col-lg-4"></div>
-            <div class="col-md-7 col-lg-4 col-8">
+              <div class="col-md-3 col-lg-3"></div>
+              <div class="col-md-7 col-lg-7 col-8">
               <h5 class="bold yellow-clr">Request a demo.</h5>
-              <h2 class="uppercase">Contact Us</h2>
+                  <h3>Get One Month of Free Session</h3>
             </div>
-            <div class="col-md-2 col-lg-4 col-4">
+              <div class="col-md-2 col-lg-2 col-4">
               <img class="close" data-dismiss="modal" aria-label="Close" src="<?php echo get_template_directory_uri()?>/assets/images/bg-close.png" class="img-responsive">
             </div>
           </div>
