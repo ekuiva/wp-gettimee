@@ -77,6 +77,10 @@ body {
     border-radius: 3px;
 }
 
+.border-inner-yellow {
+    border: 1px solid #f0cb40;
+}
+
 a {
     color: #3a3a3a;
     text-decoration: none;
