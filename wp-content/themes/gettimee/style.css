@@ -394,8 +394,12 @@ a:focus, a:hover {
     background-repeat: no-repeat;
     background-size: 10em;
     background-position: top;
-    height: 8em;
+    height: 100%;
     padding: 21px;
+    margin-top: -.5rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 /**
 * e. Contact Us
