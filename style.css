@@ -272,13 +272,18 @@ a:focus, a:hover {
     margin-top: 32px !important;
 }
 
-.img-margin-left {
-    margin-left: -13px !important;
+.mpr-0 {
+    padding-right: 0px !important;
+    margin-right: 0px !important;
 }
 
-.size-image-slider {
-    height: 172px;
-}
+/*.img-margin-left {*/
+/*margin-left: -13px !important;*/
+/*}*/
+
+/*.size-image-slider {*/
+/*height: 172px;*/
+/*}*/
 /**
 * c. GetTimee Features
 *
@@ -468,6 +473,27 @@ a:focus, a:hover {
         padding-right: 15px;
     }
 
+    .mpr-0 {
+        padding-right: .25rem !important;
+        margin-right: .25rem !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .mobile-bottom-rounded {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .25rem;
+        border-top-left-radius: 0rem;
+        border-bottom: none;
+    }
+
+    .mobile-top-rounded {
+        border-top-right-radius: .25rem;
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        border-bottom: none;
+    }
     /**
     * b. Tabs Homepage Desktop
     **/

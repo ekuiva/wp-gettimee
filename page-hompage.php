@@ -73,15 +73,15 @@ if (have_posts()) : while (have_posts()) : the_post();
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 p-0">
-                                        <div class="border-shadow m-1 p-1 rounded-left">
-                                            <div class="border-inner-yellow p-2 rounded-left">
+                                        <div class="border-shadow m-1 p-1 rounded-left mpr-0 mobile-top-rounded">
+                                            <div class="border-inner-yellow p-2 rounded-left mobile-top-rounded">
                                                 <h3 class="lead-slider"><?php echo $top_title; ?></h3>
                                                 <h4 class="title-slider"><?php echo $main_title ?></h4>
                                                 <p class="description-slider"><?php echo $description_slider ?></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 p-0"><img class="rounded-right"
+                                    <div class="col-lg-6 p-0"><img class="rounded-right mobile-bottom-rounded"
                                                                    src="<?php echo $image_lider ?>"></div>
                                 </div>
                             </div>
