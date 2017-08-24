@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="gettimee@serverem" uuid="098c2e9f-36cb-4b3d-afdc-e45aa7f57123">
+    <data-source source="LOCAL" name="gettimeev4@serverem" uuid="098c2e9f-36cb-4b3d-afdc-e45aa7f57123">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://103.82.241.65:3306/gettimee</jdbc-url>
+      <jdbc-url>jdbc:mysql://103.82.241.65:3306/gettimee-v4</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
