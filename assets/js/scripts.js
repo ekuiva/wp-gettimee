@@ -56,3 +56,9 @@ $(document).ready(function() {
 $(document).on("input", ".number", function () {
     this.value = this.value.replace(/[^\d\+]/g, '');
 });
+
+// Tabs Mobile Accordion (Untuk Membedakan Warna Ketika Aktif)
+$('#accordion .card').on("click", function () {
+    $(this).siblings().find(".panel-clr").removeClass("on");
+    $(this).find(".panel-clr").toggleClass("on");
+});

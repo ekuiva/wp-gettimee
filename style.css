@@ -512,10 +512,13 @@ a:focus, a:hover {
         width: 100%;
     }
 
-    .card > .collapsed > .card-header {
-        background-color: #f0cb40;
+    .panel-clr {
+        background-color: #f7f7f9;
     }
 
+    .panel-clr.on {
+        background-color: #f0cb40;;
+    }
 
     /**
     * d. Recaptcha

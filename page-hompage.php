@@ -272,7 +272,8 @@ if (have_posts()) : while (have_posts()) : the_post();
                                         <a data-toggle="collapse" class="uppercase" data-parent="#accordion"
                                            href="#collapse-<?php echo $count_post ?>" aria-expanded="true"
                                            aria-controls="collapse-<?php echo $count_post ?>">
-                                            <div class="card-header" role="tab" id="heading-<?php echo $count_post ?>">
+                                            <div class="card-header panel-clr on" role="tab"
+                                                 id="heading-<?php echo $count_post ?>">
                                                 <p class="mb-0 font-14">
                                                     <img src="<?php echo $icon_warna_putih; ?>">
                                                     <?php echo get_the_title(); ?>
@@ -302,7 +303,8 @@ if (have_posts()) : while (have_posts()) : the_post();
                                         <a data-toggle="collapse" class="uppercase" data-parent="#accordion"
                                            href="#collapse-<?php echo $count_post ?>" aria-expanded="true"
                                            aria-controls="collapseTwo">
-                                            <div class="card-header" role="tab" id="heading-<?php echo $count_post ?>">
+                                            <div class="card-header  panel-clr" role="tab"
+                                                 id="heading-<?php echo $count_post ?>">
                                                 <p class="mb-0 font-14">
                                                     <img class="img-responsive" src="<?php echo $icon_warna_putih; ?>">
                                                     <?php echo get_the_title(); ?>
