@@ -48,7 +48,6 @@
     </div>
 </footer>
 </body>
-<?php wp_footer(); ?>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery/jquery-3.2.1.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/tether/tether.min.js"></script>
@@ -61,7 +60,6 @@
 <!-- <script src="<?php //echo get_template_directory_uri()?>/assets/libs/bootstrap-tabcollapse/js/jquery-1.10.1.min.js"></script> -->
 <!-- <script src="<?php //echo get_template_directory_uri()?>/assets/libs/bootstrap-tabcollapse/js/bootstrap/bootstrap.js"></script> -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/libs/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
-<!-- add recaptcha google -->
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<div class="g-recaptcha" data-sitekey="6LfK2C0UAAAAAAWDt2as6XoFV7NIQBI9_SjFUhVg"></div>
+
+<?php wp_footer(); ?>
 </html>

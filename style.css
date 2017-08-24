@@ -512,6 +512,11 @@ a:focus, a:hover {
         width: 100%;
     }
 
+    .card > .collapsed > .card-header {
+        background-color: #f0cb40;
+    }
+
+
     /**
     * d. Recaptcha
     ***/
