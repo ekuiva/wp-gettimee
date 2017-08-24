@@ -31,8 +31,8 @@ function wpcf7_flamingo_submit( $contactform, $result ) {
 		return;
 	}
 
-	$fields_senseless =
-		$contactform->scan_form_tags( array( 'feature' => 'do-not-store' ) );
+	$fields_senseless = $contactform->scan_form_tags(
+		array( 'type' => array( 'captchar', 'quiz', 'acceptance' ) ) );
 
 	$exclude_names = array();
 
@@ -63,14 +63,12 @@ function wpcf7_flamingo_submit( $contactform, $result ) {
 			'', '_' . $smt, false );
 	}
 
-	$akismet = isset( $submission->akismet )
-		? (array) $submission->akismet : null;
+	$akismet = isset( $submission->akismet ) ? (array) $submission->akismet : null;
 
 	if ( 'mail_sent' == $result['status'] ) {
 		$flamingo_contact = Flamingo_Contact::add( array(
 			'email' => $email,
-			'name' => $name,
-		) );
+			'name' => $name ) );
 	}
 
 	$channel_id = wpcf7_flamingo_add_channel(
@@ -98,8 +96,7 @@ function wpcf7_flamingo_submit( $contactform, $result ) {
 		'fields' => $posted_data,
 		'meta' => $meta,
 		'akismet' => $akismet,
-		'spam' => ( 'spam' == $result['status'] ),
-	);
+		'spam' => ( 'spam' == $result['status'] ) );
 
 	$flamingo_inbound = Flamingo_Inbound_Message::add( $args );
 
@@ -107,8 +104,7 @@ function wpcf7_flamingo_submit( $contactform, $result ) {
 		'flamingo_contact_id' =>
 			empty( $flamingo_contact ) ? 0 : absint( $flamingo_contact->id ),
 		'flamingo_inbound_id' =>
-			empty( $flamingo_inbound ) ? 0 : absint( $flamingo_inbound->id ),
-	);
+			empty( $flamingo_inbound ) ? 0 : absint( $flamingo_inbound->id ) );
 
 	do_action( 'wpcf7_after_flamingo', $result );
 }

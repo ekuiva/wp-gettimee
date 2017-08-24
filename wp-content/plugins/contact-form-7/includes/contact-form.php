@@ -289,18 +289,6 @@ class WPCF7_ContactForm {
 				. esc_html( $this->prop( 'form' ) ) . '</code></pre>';
 		}
 
-		if ( $this->is_true( 'subscribers_only' )
-		&& ! current_user_can( 'wpcf7_submit', $this->id() ) ) {
-			$notice = __(
-				"This contact form is available only for logged in users.",
-				'contact-form-7' );
-			$notice = sprintf(
-				'<p class="wpcf7-subscribers-only">%s</p>',
-				esc_html( $notice ) );
-
-			return apply_filters( 'wpcf7_subscribers_only_notice', $notice, $this );
-		}
-
 		$this->unit_tag = self::get_unit_tag( $this->id );
 
 		$lang_tag = str_replace( '_', '-', $this->locale );
@@ -410,19 +398,14 @@ class WPCF7_ContactForm {
 
 	private function form_hidden_fields() {
 		$hidden_fields = array(
-			'_wpcf7' => $this->id(),
+			'_wpcf7' => $this->id,
 			'_wpcf7_version' => WPCF7_VERSION,
-			'_wpcf7_locale' => $this->locale(),
+			'_wpcf7_locale' => $this->locale,
 			'_wpcf7_unit_tag' => $this->unit_tag,
-			'_wpcf7_container_post' => 0,
 		);
 
-		if ( in_the_loop() ) {
-			$hidden_fields['_wpcf7_container_post'] = (int) get_the_ID();
-		}
-
-		if ( $this->nonce_is_active() ) {
-			$hidden_fields['_wpnonce'] = wpcf7_create_nonce();
+		if ( WPCF7_VERIFY_NONCE ) {
+			$hidden_fields['_wpnonce'] = wpcf7_create_nonce( $this->id );
 		}
 
 		$hidden_fields += (array) apply_filters(
@@ -609,7 +592,7 @@ class WPCF7_ContactForm {
 		$mailtags = array();
 
 		foreach ( (array) $tags as $tag ) {
-			$type = $tag->basetype;
+			$type = trim( $tag['type'], ' *' );
 
 			if ( empty( $type ) ) {
 				continue;
@@ -623,12 +606,12 @@ class WPCF7_ContactForm {
 				}
 			}
 
-			$mailtags[] = $tag->name;
+			$mailtags[] = $tag['name'];
 		}
 
 		$mailtags = array_unique( array_filter( $mailtags ) );
 
-		return apply_filters( 'wpcf7_collect_mail_tags', $mailtags, $args, $this );
+		return apply_filters( 'wpcf7_collect_mail_tags', $mailtags );
 	}
 
 	public function suggest_mail_tags( $for = 'mail' ) {
@@ -660,27 +643,8 @@ class WPCF7_ContactForm {
 		}
 	}
 
-	public function submit( $args = '' ) {
-		$args = wp_parse_args( $args, array(
-			'skip_mail' => $this->in_demo_mode() || ! empty( $this->skip_mail ),
-		) );
-
-		if ( $this->is_true( 'subscribers_only' )
-		&& ! current_user_can( 'wpcf7_submit', $this->id() ) ) {
-			$result = array(
-				'contact_form_id' => $this->id(),
-				'status' => 'error',
-				'message' => __(
-					"This contact form is available only for logged in users.",
-					'contact-form-7' ),
-			);
-
-			return $result;
-		}
-
-		$submission = WPCF7_Submission::get_instance( $this, array(
-			'skip_mail' => $args['skip_mail'],
-		) );
+	public function submit( $ajax = false ) {
+		$submission = WPCF7_Submission::get_instance( $this );
 
 		$result = array(
 			'contact_form_id' => $this->id(),
@@ -694,19 +658,23 @@ class WPCF7_ContactForm {
 		}
 
 		if ( $submission->is( 'mail_sent' ) ) {
-			$on_sent_ok = $this->additional_setting( 'on_sent_ok', false );
+			if ( $ajax ) {
+				$on_sent_ok = $this->additional_setting( 'on_sent_ok', false );
 
-			if ( ! empty( $on_sent_ok ) ) {
-				$result['scripts_on_sent_ok'] = array_map(
-					'wpcf7_strip_quote', $on_sent_ok );
+				if ( ! empty( $on_sent_ok ) ) {
+					$result['scripts_on_sent_ok'] = array_map(
+						'wpcf7_strip_quote', $on_sent_ok );
+				}
 			}
 		}
 
-		$on_submit = $this->additional_setting( 'on_submit', false );
+		if ( $ajax ) {
+			$on_submit = $this->additional_setting( 'on_submit', false );
 
-		if ( ! empty( $on_submit ) ) {
-			$result['scripts_on_submit'] = array_map(
-				'wpcf7_strip_quote', $on_submit );
+			if ( ! empty( $on_submit ) ) {
+				$result['scripts_on_submit'] = array_map(
+					'wpcf7_strip_quote', $on_submit );
+			}
 		}
 
 		do_action( 'wpcf7_submit', $this, $result );
@@ -768,16 +736,6 @@ class WPCF7_ContactForm {
 
 	public function in_demo_mode() {
 		return $this->is_true( 'demo_mode' );
-	}
-
-	public function nonce_is_active() {
-		$is_active = WPCF7_VERIFY_NONCE;
-
-		if ( $this->is_true( 'subscribers_only' ) ) {
-			$is_active = true;
-		}
-
-		return (bool) apply_filters( 'wpcf7_verify_nonce', $is_active, $this );
 	}
 
 	/* Upgrade */

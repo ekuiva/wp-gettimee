@@ -389,6 +389,14 @@ a:focus, a:hover {
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+.nav-item:hover > .nav-link > .bg-tab {
+    background-image: url("assets/images/bg-tab-hover.png");
+    background-repeat: no-repeat;
+    background-size: 10em;
+    background-position: top;
+    height: 8em;
+    padding: 21px;
+}
 /**
 * e. Contact Us
 *

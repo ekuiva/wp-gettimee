@@ -301,11 +301,9 @@ function wpcf7_admin_enqueue_scripts( $hook_suffix ) {
 
 	$args = array(
 		'apiSettings' => array(
-			'root' => esc_url_raw( rest_url( 'contact-form-7/v1' ) ),
-			'namespace' => 'contact-form-7/v1',
+			'root' => esc_url_raw( get_rest_url() ),
 			'nonce' => ( wp_installing() && ! is_multisite() )
-				? '' : wp_create_nonce( 'wp_rest' ),
-		),
+				? '' : wp_create_nonce( 'wp_rest' ) ),
 		'pluginUrl' => wpcf7_plugin_url(),
 		'saveAlert' => __(
 			"The changes you made will be lost if you navigate away from this page.",
@@ -332,7 +330,7 @@ function wpcf7_admin_enqueue_scripts( $hook_suffix ) {
 			$config_validator->collect_error_messages();
 	}
 
-	wp_localize_script( 'wpcf7-admin', 'wpcf7', $args );
+	wp_localize_script( 'wpcf7-admin', '_wpcf7', $args );
 
 	add_thickbox();
 
@@ -363,15 +361,11 @@ function wpcf7_admin_management_page() {
 ?>
 <div class="wrap">
 
-<h1 class="wp-heading-inline"><?php
+<h1><?php
 	echo esc_html( __( 'Contact Forms', 'contact-form-7' ) );
-?></h1>
 
-<?php
 	if ( current_user_can( 'wpcf7_edit_contact_forms' ) ) {
-		echo sprintf( '<a href="%1$s" class="add-new-h2">%2$s</a>',
-			esc_url( menu_page_url( 'wpcf7-new', false ) ),
-			esc_html( __( 'Add New', 'contact-form-7' ) ) );
+		echo ' <a href="' . esc_url( menu_page_url( 'wpcf7-new', false ) ) . '" class="add-new-h2">' . esc_html( __( 'Add New', 'contact-form-7' ) ) . '</a>';
 	}
 
 	if ( ! empty( $_REQUEST['s'] ) ) {
@@ -379,9 +373,7 @@ function wpcf7_admin_management_page() {
 			. __( 'Search results for &#8220;%s&#8221;', 'contact-form-7' )
 			. '</span>', esc_html( $_REQUEST['s'] ) );
 	}
-?>
-
-<hr class="wp-header-end">
+?></h1>
 
 <?php do_action( 'wpcf7_admin_warnings' ); ?>
 <?php wpcf7_welcome_panel(); ?>

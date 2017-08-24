@@ -2,15 +2,15 @@
 
 	'use strict';
 
-	if ( typeof wpcf7 === 'undefined' || wpcf7 === null ) {
+	if ( typeof _wpcf7 === 'undefined' || _wpcf7 === null ) {
 		return;
 	}
 
-	wpcf7.taggen = {};
+	_wpcf7.taggen = {};
 
 	$( function() {
 		$( 'form.tag-generator-panel' ).each( function() {
-			wpcf7.taggen.update( $( this ) );
+			_wpcf7.taggen.update( $( this ) );
 		} );
 	} );
 
@@ -20,19 +20,19 @@
 
 	$( 'form.tag-generator-panel .control-box :input' ).change( function() {
 		var $form = $( this ).closest( 'form.tag-generator-panel' );
-		wpcf7.taggen.normalize( $( this ) );
-		wpcf7.taggen.update( $form );
+		_wpcf7.taggen.normalize( $( this ) );
+		_wpcf7.taggen.update( $form );
 	} );
 
 	$( 'input.insert-tag' ).click( function() {
 		var $form = $( this ).closest( 'form.tag-generator-panel' );
 		var tag = $form.find( 'input.tag' ).val();
-		wpcf7.taggen.insert( tag );
+		_wpcf7.taggen.insert( tag );
 		tb_remove(); // close thickbox
 		return false;
 	} );
 
-	wpcf7.taggen.update = function( $form ) {
+	_wpcf7.taggen.update = function( $form ) {
 		var id = $form.attr( 'data-id' );
 		var name = '';
 		var name_fields = $form.find( 'input[name="name"]' );
@@ -46,8 +46,8 @@
 			}
 		}
 
-		if ( $.isFunction( wpcf7.taggen.update[ id ] ) ) {
-			return wpcf7.taggen.update[ id ].call( this, $form );
+		if ( $.isFunction( _wpcf7.taggen.update[ id ] ) ) {
+			return _wpcf7.taggen.update[ id ].call( this, $form );
 		}
 
 		$form.find( 'input.tag' ).each( function() {
@@ -61,7 +61,7 @@
 				tag_type += '*';
 			}
 
-			var components = wpcf7.taggen.compose( tag_type, $form );
+			var components = _wpcf7.taggen.compose( tag_type, $form );
 			$( this ).val( components );
 		} );
 
@@ -72,14 +72,14 @@
 		} );
 	};
 
-	wpcf7.taggen.update.captcha = function( $form ) {
-		var captchac = wpcf7.taggen.compose( 'captchac', $form );
-		var captchar = wpcf7.taggen.compose( 'captchar', $form );
+	_wpcf7.taggen.update.captcha = function( $form ) {
+		var captchac = _wpcf7.taggen.compose( 'captchac', $form );
+		var captchar = _wpcf7.taggen.compose( 'captchar', $form );
 
 		$form.find( 'input.tag' ).val( captchac + ' ' + captchar );
 	};
 
-	wpcf7.taggen.compose = function( tagType, $form ) {
+	_wpcf7.taggen.compose = function( tagType, $form ) {
 		var name = $form.find( 'input[name="name"]' ).val();
 		var scope = $form.find( '.scope.' + tagType );
 
@@ -156,7 +156,7 @@
 		return '[' + components + ']';
 	};
 
-	wpcf7.taggen.normalize = function( $input ) {
+	_wpcf7.taggen.normalize = function( $input ) {
 		var val = $input.val();
 
 		if ( $input.is( 'input[name="name"]' ) ) {
@@ -205,17 +205,17 @@
 		$input.val( val );
 
 		if ( $input.is( ':checkbox.exclusive' ) ) {
-			wpcf7.taggen.exclusiveCheckbox( $input );
+			_wpcf7.taggen.exclusiveCheckbox( $input );
 		}
 	};
 
-	wpcf7.taggen.exclusiveCheckbox = function( $cb ) {
+	_wpcf7.taggen.exclusiveCheckbox = function( $cb ) {
 		if ( $cb.is( ':checked' ) ) {
 			$cb.siblings( ':checkbox.exclusive' ).prop( 'checked', false );
 		}
 	};
 
-	wpcf7.taggen.insert = function( content ) {
+	_wpcf7.taggen.insert = function( content ) {
 		$( 'textarea#wpcf7-form' ).each( function() {
 			this.focus();
 
