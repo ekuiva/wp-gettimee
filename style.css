@@ -365,6 +365,23 @@ a:focus, a:hover {
     padding: 2em 8em 3em 3em;
 }
 
+.z-index-img-normal {
+    z-index: 0;
+    position: absolute;
+    left: 4rem;
+    right: 3rem;
+    top: -2.3rem;
+}
+
+.z-index-bg {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+
+.z-index-img-normal > .icon-active {
+    margin-top: -1rem;
+}
 /**
 * e. Contact Us
 *

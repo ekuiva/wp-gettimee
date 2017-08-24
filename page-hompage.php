@@ -104,7 +104,7 @@ if (have_posts()) : while (have_posts()) : the_post();
             <div class="container">
                 <div class="row">
                     <div class="col-md-1 col-lg-3"></div>
-                    <div class="col-md-10 col-lg-6">
+                    <div class="col-md-10 col-lg-6 mb-4">
                         <h4 class="bold yellow-clr">Everything you need for your team.</h4>
                         <h1 class="uppercase">GetTimee Features</h1>
                     </div>
@@ -113,10 +113,10 @@ if (have_posts()) : while (have_posts()) : the_post();
                     <div class="col-md-1 col-lg-3"></div>
                 </div>
             </div>
-            <div class="row space-top-high">
+            <div class="row mt-5">
                 <!-- Start Tabs Desktop-->
                 <div class="container tabs-desktop">
-                    <div class="row">
+                    <div class="container">
                         <ul id="myTab" class="nav nav-tabs" role="tablist">
                             <!-- Start GetTimee Features -->
                             <?php
@@ -139,12 +139,12 @@ if (have_posts()) : while (have_posts()) : the_post();
                                         <li class="nav-item col-md-2">
                                             <a href="#<?php echo $post_slug ?>" class="nav-link active"
                                                data-toggle="tab" role="tab">
-                                                <div class="text-center">
+                                                <div class="text-center z-index-img-normal">
                                                     <img class="icon-normal" src="<?php echo $icon_warna_putih; ?>">
                                                     <img class="icon-active"
                                                          src="<?php echo $icon_warna_hitam_kuning; ?>">
                                                 </div>
-                                                <div class="text-center bg-tab uppercase">
+                                                <div class="text-center bg-tab uppercase z-index-bg">
                                                     <p class="font-14"><?php echo get_the_title() ?></p>
                                                 </div>
                                             </a>
@@ -155,12 +155,12 @@ if (have_posts()) : while (have_posts()) : the_post();
                                         <li class="nav-item col-md-2">
                                             <a href="#<?php echo $post_slug ?>" class="nav-link" data-toggle="tab"
                                                role="tab">
-                                                <div class="text-center">
+                                                <div class="text-center z-index-img-normal">
                                                     <img class="icon-normal" src="<?php echo $icon_warna_putih; ?>">
                                                     <img class="icon-active"
                                                          src="<?php echo $icon_warna_hitam_kuning; ?>">
                                                 </div>
-                                                <div class="text-center bg-tab uppercase">
+                                                <div class="text-center bg-tab uppercase z-index-bg">
                                                     <p class="font-14"><?php echo get_the_title() ?></p>
                                                 </div>
                                             </a>
