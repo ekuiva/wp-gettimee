@@ -380,15 +380,18 @@ a:focus, a:hover {
 }
 
 .z-index-img-normal > .icon-active {
-    margin-top: -1rem;
+    margin-top: -1.6rem;
 }
 
+/*hover untuk icon hitam*/
 .nav-item:hover > .nav-link > .z-index-img-normal > .icon-normal {
-    margin-top: -1rem;
+    margin-top: -1.6rem;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+/*hover untuk background judul*/
 .nav-item:hover > .nav-link > .bg-tab {
     background-image: url("assets/images/bg-tab-hover.png");
     background-repeat: no-repeat;
@@ -397,6 +400,15 @@ a:focus, a:hover {
     height: 100%;
     padding: 21px;
     margin-top: -.5rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*agar background warna kuning ketika aktif tidak berubah*/
+.nav-item:hover > .nav-link.active > .bg-tab {
+    background-image: url(assets/images/bg-tab-active.png) !important;
+    margin-top: 0rem !important;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;

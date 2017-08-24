@@ -104,7 +104,7 @@ if (have_posts()) : while (have_posts()) : the_post();
             <div class="container">
                 <div class="row">
                     <div class="col-md-1 col-lg-3"></div>
-                    <div class="col-md-10 col-lg-6 mb-4">
+                    <div class="col-md-10 col-lg-6 mb-5">
                         <h4 class="bold yellow-clr">Everything you need for your team.</h4>
                         <h1 class="uppercase">GetTimee Features</h1>
                     </div>
