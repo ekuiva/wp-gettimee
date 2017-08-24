@@ -21,12 +21,14 @@ Version: 1.8
 *		g.
 * 3.0 - Responsive Style
 *     - Responsive 0 - 800 Mobile
-*		a. Slider
-*		b. Tabs Homepage Desktop
-*		c. Tabs Home Mobile
-*		d. 
+*       a. General
+*		b. Slider
+*		c. Tabs Homepage Desktop
+*		d. Tabs Home Mobile
+*		e. Recaptcha
+*       f. Contact Us
 *     - Responsive 800 - 1000 Tablet
-*		a. 
+*		a. Recaptcha
 *     - Responsive 1000 Desktop
 * 		a. Tabs Home Mobile
 *
@@ -65,10 +67,10 @@ body {
 .text-hover > img {
     opacity: 0.5;
 }
+
 .text-hover:hover > img {
     opacity: 1;
 }
-
 
 .btn-outer {
     padding: .3rem .3rem;
@@ -140,6 +142,7 @@ a:focus, a:hover {
 .padding-right-0-slider {
     padding-right: 0px;
 }
+
 /**
 * 2.0 - Home Page
 *
@@ -182,6 +185,7 @@ a:focus, a:hover {
 .img-scroll-up {
     margin-bottom: -28px;
 }
+
 /**
 * b. Slider
 *
@@ -277,13 +281,6 @@ a:focus, a:hover {
     margin-right: 0px !important;
 }
 
-/*.img-margin-left {*/
-/*margin-left: -13px !important;*/
-/*}*/
-
-/*.size-image-slider {*/
-/*height: 172px;*/
-/*}*/
 /**
 * c. GetTimee Features
 *
@@ -344,6 +341,7 @@ a:focus, a:hover {
 .nav-link.active > .bg-tab > p {
     color: #fff;
 }
+
 .nav-tabs {
     border-bottom: 1px solid rgba(221, 221, 221, 0);
 }
@@ -361,6 +359,7 @@ a:focus, a:hover {
     padding-top: 2rem;
     padding-bottom: 2.6rem;
 }
+
 .padding-item-tab {
     padding: 2em 8em 3em 3em;
 }
@@ -383,7 +382,7 @@ a:focus, a:hover {
     margin-top: -1.6rem;
 }
 
-/*hover untuk icon hitam*/
+/* Hover untuk Icon Hitam*/
 .nav-item:hover > .nav-link > .z-index-img-normal > .icon-normal {
     margin-top: -1.6rem;
     -webkit-transition: all 0.5s;
@@ -391,7 +390,7 @@ a:focus, a:hover {
     transition: all 0.5s;
 }
 
-/*hover untuk background judul*/
+/* Hover untuk Background Judul */
 .nav-item:hover > .nav-link > .bg-tab {
     background-image: url("assets/images/bg-tab-hover.png");
     background-repeat: no-repeat;
@@ -405,7 +404,7 @@ a:focus, a:hover {
     transition: all 0.5s;
 }
 
-/*agar background warna kuning ketika aktif tidak berubah*/
+/* Agar Background Warna Kuning Ketika Aktif Tidak Berubah*/
 .nav-item:hover > .nav-link.active > .bg-tab {
     background-image: url(assets/images/bg-tab-active.png) !important;
     margin-top: 0rem !important;
@@ -413,6 +412,7 @@ a:focus, a:hover {
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 /**
 * e. Contact Us
 *
@@ -434,6 +434,7 @@ a:focus, a:hover {
 .form-control {
     border: 1px solid #f0cb40
 }
+
 /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder {
     color: #7d7d7d;
@@ -509,9 +510,23 @@ a:focus, a:hover {
 * Responsive 0 - 800 Mobile
 */
 @media (min-width: 0px) and (max-width: 800px) {
+    /**
+    * a. General
+    **/
+    .text-center-mobile {
+        text-align: center;
+    }
+
+    .text-left-mobile {
+        text-align: left;
+    }
+
+    .text-right-mobile {
+        text-align: right;
+    }
 
     /**
-    * a. Slider
+    * b. Slider
     **/
     .padding-left-0 {
         padding-left: 0px;
@@ -545,16 +560,18 @@ a:focus, a:hover {
         border-bottom-left-radius: 0rem;
         border-bottom-right-radius: 0rem;
         border-bottom: none;
+        box-shadow: 0px 1px 1px 1px #dcdcdc;
     }
+
     /**
-    * b. Tabs Homepage Desktop
+    * c. Tabs Homepage Desktop
     **/
     .tabs-desktop {
         display: none;
     }
 
     /**
-    * c. Tabs Home Mobile
+    * d. Tabs Home Mobile
     **/
     .tabs-mobile {
         width: 100%;
@@ -569,7 +586,7 @@ a:focus, a:hover {
     }
 
     /**
-    * d. Recaptcha
+    * e. Recaptcha
     ***/
     #rc-imageselect, .g-recaptcha {
         transform: scale(0.74);
@@ -580,7 +597,7 @@ a:focus, a:hover {
     }
 
     /**
-    * e. Contact Us
+    * f. Contact Us
     **/
     .pr-1-mobile {
         padding-right: 1rem !important;

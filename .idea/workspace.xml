@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2ae7ada-9de0-49da-9d75-2f5dce0111a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/gettimee/assets/images/bg-tab-hover.png" afterPath="$PROJECT_DIR$/wp-content/themes/gettimee/assets/images/bg-tab-hover.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php" afterPath="$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" />
@@ -38,6 +37,9 @@
     </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gettimee" />
+  </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
     <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
@@ -46,21 +48,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page-hompage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page-hompage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+            <state relative-caret-position="193">
+              <caret line="383" column="75" lean-forward="false" selection-start-line="383" selection-start-column="75" selection-end-line="383" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="407" column="31" lean-forward="true" selection-start-line="407" selection-start-column="31" selection-end-line="407" selection-end-column="31" />
+            <state relative-caret-position="1346">
+              <caret line="403" column="25" lean-forward="true" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -77,12 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Get One Month of Free Session</find>
-      <find>pla</find>
-      <find>contact</find>
-      <find>btn</find>
-      <find>font-f</find>
-      <find>outer</find>
       <find>.bg-footer</find>
       <find>.footer-space</find>
       <find>.bg-tab-item</find>
@@ -107,6 +103,12 @@
       <find>nav</find>
       <find>.z-index-img-normal</find>
       <find>nav-link</find>
+      <find>tabs mo</find>
+      <find>col-md-3 col-sm-6 text-hover</find>
+      <find>Responsive 0 - 800 Mobile</find>
+      <find>e. Recaptcha</find>
+      <find>Responsive 800 - 1000 Tablet</find>
+      <find>Responsive 1000 Desktop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,8 +135,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="&lt;6f358c8b-9c82-4b27-81dc-5405b796939d&gt;/etc/httpd/conf/httpd.conf" />
         <option value="&lt;6f358c8b-9c82-4b27-81dc-5405b796939d&gt;/var/www/html/gettimee.ekuiva.com/wp-config.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" />
       </list>
     </option>
   </component>
@@ -354,18 +356,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31516185" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270869" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7734242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347957" sideWeight="0.49113923" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20347957" sideWeight="0.50886077" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -460,7 +462,8 @@
     <MESSAGE value="Update source home page: memperbaiki hover aktif &amp; tidak aktif" />
     <MESSAGE value="submit folder .idea" />
     <MESSAGE value="update source untuk contact form 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="update source untuk contact form 7" />
+    <MESSAGE value="homepage: update source untuk hover tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage: update source untuk hover tab" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -737,18 +740,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="407" column="31" lean-forward="true" selection-start-line="407" selection-start-column="31" selection-end-line="407" selection-end-column="31" />
+        <state relative-caret-position="193">
+          <caret line="383" column="75" lean-forward="false" selection-start-line="383" selection-start-column="75" selection-end-line="383" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+        <state relative-caret-position="1346">
+          <caret line="403" column="25" lean-forward="true" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="25" />
           <folding />
         </state>
       </provider>

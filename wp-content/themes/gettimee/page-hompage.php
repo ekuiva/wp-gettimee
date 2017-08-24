@@ -289,7 +289,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                                                     <p><?php echo get_the_content(); ?></p>
                                                 </div>
                                                 <div class="col-md-12 text-center">
-                                                    <img class="img-responsive"
+                                                    <img class="img-responsive mr-1"
                                                          src="<?php echo $image_fitur_gettimee_via_mobile; ?>">
                                                 </div>
                                             </div>
@@ -306,7 +306,8 @@ if (have_posts()) : while (have_posts()) : the_post();
                                             <div class="card-header  panel-clr" role="tab"
                                                  id="heading-<?php echo $count_post ?>">
                                                 <p class="mb-0 font-14">
-                                                    <img class="img-responsive" src="<?php echo $icon_warna_putih; ?>">
+                                                    <img class="img-responsive mr-1"
+                                                         src="<?php echo $icon_warna_putih; ?>">
                                                     <?php echo get_the_title(); ?>
                                                 </p>
                                             </div>
@@ -357,7 +358,7 @@ if (have_posts()) : while (have_posts()) : the_post();
         </div>
         <div class="container space-top-high">
             <div class="row">
-                <div class="col-md-3 col-sm-6 text-hover">
+                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-transparency.png"
                          class="img-responsive hover-image">
                     <div class="margin-top-up">
@@ -365,7 +366,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                         <p>The control of employee’s working time is managed fairly and transparently</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-hover">
+                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-simple.png"
                          class="img-responsive hover-image">
                     <div class="margin-top-up">
@@ -373,7 +374,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                         <p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-hover">
+                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-reliability-hover.png"
                          class="img-responsive hover-image">
                     <div class="margin-top-up">
@@ -381,7 +382,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                         <p>It works anywhere with majority devices</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-hover">
+                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-satisfaction.png"
                          class="img-responsive hover-image">
                     <div class="margin-top-up">
