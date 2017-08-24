@@ -382,6 +382,13 @@ a:focus, a:hover {
 .z-index-img-normal > .icon-active {
     margin-top: -1rem;
 }
+
+.nav-item:hover > .nav-link > .z-index-img-normal > .icon-normal {
+    margin-top: -1rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
 /**
 * e. Contact Us
 *
