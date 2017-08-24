@@ -427,6 +427,10 @@ a:focus, a:hover {
     opacity: 1;
 }
 
+.ajax-loader {
+    display: none !important;
+}
+
 /**
 * f. Footer
 *

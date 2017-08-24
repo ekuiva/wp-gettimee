@@ -51,3 +51,8 @@ $(document).ready(function() {
         return false;
     });
 });
+
+// Validator Number
+$(document).on("input", ".number", function () {
+    this.value = this.value.replace(/[^\d\+]/g, '');
+});

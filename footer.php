@@ -48,6 +48,7 @@
     </div>
 </footer>
 </body>
+<?php wp_footer(); ?>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery/jquery-3.2.1.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/tether/tether.min.js"></script>
