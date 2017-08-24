@@ -56,7 +56,7 @@ body {
     color: #3a3a3a;
     cursor: pointer;
     border-radius: 3px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', serif;
 }
 
 .btn:hover {
@@ -140,7 +140,7 @@ a:focus, a:hover {
 }
 
 .padding-right-0-slider {
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 /**
@@ -154,13 +154,11 @@ a:focus, a:hover {
 *
 **/
 .bg-header {
-    background-image: url(assets/images/header.png);
-    background-repeat: no-repeat;
+    background: url(assets/images/header.png) no-repeat left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: left;
     color: #fff;
 }
 
@@ -203,7 +201,7 @@ a:focus, a:hover {
 
 .description-slider {
     font-size: 13px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .border-shadow {
@@ -215,15 +213,15 @@ a:focus, a:hover {
 }
 
 .padding-right-0 {
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 .padding-left-0 {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .padding-left-nol {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .img-slider {
@@ -242,17 +240,14 @@ a:focus, a:hover {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    background-image: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator.png') !important;
-    background-repeat: no-repeat !important;
+    background: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator.png') no-repeat #fffefe !important;
     width: 20px !important;
     height: 20px !important;
-    border-radius: 0px !important;
-    background-color: #fffefe !important;
+    border-radius: 0 !important;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background-image: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator-active.png') !important;
-    background-repeat: no-repeat !important;
+    background: url('http://gettimee.ekuiva.com/wp-content/uploads/2017/08/bg-indicator-active.png') no-repeat !important;
 }
 
 .slider-homepage .owl-nav {
@@ -277,8 +272,8 @@ a:focus, a:hover {
 }
 
 .mpr-0 {
-    padding-right: 0px !important;
-    margin-right: 0px !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
 }
 
 /**
@@ -294,10 +289,8 @@ a:focus, a:hover {
 *
 **/
 .bg-tab {
-    background-image: url('assets/images/bg-tab.png');
-    background-repeat: no-repeat;
+    background: url('assets/images/bg-tab.png') no-repeat top;
     background-size: 10em;
-    background-position: top;
     height: 8em;
     padding: 21px;
 }
@@ -353,11 +346,8 @@ a:focus, a:hover {
 }
 
 .bg-icon {
-    background-image: url("assets/images/bg-coklat.png");
-    background-repeat: no-repeat;
-    padding: 1.7rem;
-    padding-top: 2rem;
-    padding-bottom: 2.6rem;
+    background: url("assets/images/bg-coklat.png") no-repeat;
+    padding: 2rem 1.7rem 2.6rem;
 }
 
 .padding-item-tab {
@@ -392,10 +382,8 @@ a:focus, a:hover {
 
 /* Hover untuk Background Judul */
 .nav-item:hover > .nav-link > .bg-tab {
-    background-image: url("assets/images/bg-tab-hover.png");
-    background-repeat: no-repeat;
+    background: url("assets/images/bg-tab-hover.png") no-repeat top;
     background-size: 10em;
-    background-position: top;
     height: 100%;
     padding: 21px;
     margin-top: -.5rem;
@@ -407,7 +395,7 @@ a:focus, a:hover {
 /* Agar Background Warna Kuning Ketika Aktif Tidak Berubah*/
 .nav-item:hover > .nav-link.active > .bg-tab {
     background-image: url(assets/images/bg-tab-active.png) !important;
-    margin-top: 0rem !important;
+    margin-top: 0 !important;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -497,7 +485,7 @@ a:focus, a:hover {
 }
 
 .footer-space {
-    margin: 12px 0px;
+    margin: 12px 0;
 }
 
 /**
@@ -529,11 +517,11 @@ a:focus, a:hover {
     * b. Slider
     **/
     .padding-left-0 {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .padding-right-0 {
-        padding-right: 0px;
+        padding-right: 0;
     }
 
     .padding-right-0-slider {
@@ -543,24 +531,21 @@ a:focus, a:hover {
     .mpr-0 {
         padding-right: .25rem !important;
         margin-right: .25rem !important;
-        padding-bottom: 0px !important;
-        margin-bottom: 0px !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 
     .mobile-bottom-rounded {
         border-top-right-radius: 0;
         border-bottom-left-radius: .25rem;
-        border-top-left-radius: 0rem;
+        border-top-left-radius: 0;
         border-bottom: none;
     }
 
     .mobile-top-rounded {
-        border-top-right-radius: .25rem;
-        border-top-left-radius: .25rem;
-        border-bottom-left-radius: 0rem;
-        border-bottom-right-radius: 0rem;
+        border-radius: .25rem .25rem 0 0;
         border-bottom: none;
-        box-shadow: 0px 1px 1px 1px #dcdcdc;
+        box-shadow: 0 1px 1px 1px #dcdcdc;
     }
 
     /**

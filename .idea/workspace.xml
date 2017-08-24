@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d2ae7ada-9de0-49da-9d75-2f5dce0111a4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php" afterPath="$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/gettimee/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/gettimee/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -51,8 +51,8 @@
       <file leaf-file-name="page-hompage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="383" column="75" lean-forward="false" selection-start-line="383" selection-start-column="75" selection-end-line="383" selection-end-column="75" />
+            <state relative-caret-position="400">
+              <caret line="387" column="45" lean-forward="false" selection-start-line="387" selection-start-column="45" selection-end-line="387" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -61,8 +61,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1346">
-              <caret line="403" column="25" lean-forward="true" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="25" />
+            <state relative-caret-position="840">
+              <caret line="547" column="22" lean-forward="false" selection-start-line="547" selection-start-column="22" selection-end-line="547" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -137,6 +137,7 @@
         <option value="&lt;6f358c8b-9c82-4b27-81dc-5405b796939d&gt;/var/www/html/gettimee.ekuiva.com/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/gettimee/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/gettimee/footer.php" />
       </list>
     </option>
   </component>
@@ -632,14 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/c3a818f1/098c2e9f-36cb-4b3d-afdc-e45aa7f57123/gettimee.wp_postmeta">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -724,14 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1089">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -742,16 +727,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/page-hompage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="383" column="75" lean-forward="false" selection-start-line="383" selection-start-column="75" selection-end-line="383" selection-end-column="75" />
+        <state relative-caret-position="400">
+          <caret line="387" column="45" lean-forward="false" selection-start-line="387" selection-start-column="45" selection-end-line="387" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="57" column="87" lean-forward="true" selection-start-line="57" selection-start-column="87" selection-end-line="57" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/gettimee/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1346">
-          <caret line="403" column="25" lean-forward="true" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="25" />
+        <state relative-caret-position="840">
+          <caret line="547" column="22" lean-forward="false" selection-start-line="547" selection-start-column="22" selection-end-line="547" selection-end-column="22" />
           <folding />
         </state>
       </provider>
