@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="6f358c8b-9c82-4b27-81dc-5405b796939d" name="Server EM" url="http://103.82.241.65">
+      <webServer id="6f358c8b-9c82-4b27-81dc-5405b796939d" name="Server EM (project level)" url="http://103.82.241.65">
         <fileTransfer host="103.82.241.65" port="8288" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
