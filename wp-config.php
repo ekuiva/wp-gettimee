@@ -93,3 +93,6 @@ require_once(ABSPATH . 'wp-settings.php');
 define( 'WP_AUTO_UPDATE_CORE', true );
 
 define('FS_METHOD', 'direct');
+
+define('WPCF7_VALIDATE_CONFIGURATION', false);
+add_filter('wpcf7_validate_configuration', '__return_false');
