@@ -468,6 +468,12 @@ a:focus, a:hover {
     /*display: none !important;*/
 }
 
+.btn-send {
+    padding: 1rem;
+    background-color: #f0cb40;
+    display: inline-block;
+    border-radius: 3px;
+}
 /**
 * f. Footer
 *
