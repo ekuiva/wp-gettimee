@@ -465,7 +465,7 @@ a:focus, a:hover {
 }
 
 .ajax-loader {
-    display: none !important;
+    /*display: none !important;*/
 }
 
 /**
