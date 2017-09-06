@@ -358,38 +358,29 @@ if (have_posts()) : while (have_posts()) : the_post();
         </div>
         <div class="container space-top-high">
             <div class="row">
-                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-transparency.png"
-                         class="img-responsive hover-image">
-                    <div class="margin-top-up">
-                        <h5 class="yellow-clr bold">Transparency</h5>
-                        <p>The control of employee’s working time is managed fairly and transparently</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-simple.png"
-                         class="img-responsive hover-image">
-                    <div class="margin-top-up">
-                        <h5 class="yellow-clr bold">Simple</h5>
-                        <p>The entire system is very easy to set up. GetTimee simplicity will benefit all users</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-reliability-hover.png"
-                         class="img-responsive hover-image">
-                    <div class="margin-top-up">
-                        <h5 class="yellow-clr bold">Reliability</h5>
-                        <p>It works anywhere with majority devices</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/icon-satisfaction.png"
-                         class="img-responsive hover-image">
-                    <div class="margin-top-up">
-                        <h5 class="yellow-clr bold">Satisfaction</h5>
-                        <p>Transparent and uncomplicated system will increase satisfaction from all employees</p>
-                    </div>
-                </div>
+                <?php
+                $whygettimee = new WP_Query(array('post_type' => 'whygettimee', 'posts_per_page' => 4, 'order' => 'ASC'));
+                while ($whygettimee->have_posts()) {//start while
+                    $whygettimee->the_post();
+                    $whygettimee_id = $post->ID;
+                    $whygettimee_component = get_post_meta($whygettimee_id, 'whygettimee-component', TRUE);
+                    foreach ($whygettimee_component as $key => $value) { //start foreach
+                        $icon = wp_get_attachment_url($value['icon']);
+                        ?>
+
+                        <div class="col-md-3 col-sm-6 text-hover text-center-mobile">
+                            <img src="<?php echo $icon ?>"
+                                 class="img-responsive hover-image">
+                            <div class="margin-top-up">
+                                <h5 class="yellow-clr bold"><?php echo get_the_title() ?></h5>
+                                <p><?php echo get_the_content() ?></p>
+                            </div>
+                        </div>
+
+                        <?php
+                    } //end of foreach
+                } //end of while
+                ?>
             </div>
         </div>
     </div> <!-- End of Choose GetTimee -->
