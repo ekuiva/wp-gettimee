@@ -351,6 +351,7 @@ a:focus, a:hover {
 }
 
 .padding-item-tab {
+    max-width: 61%;
     padding: 2em 8em 3em 3em;
 }
 
